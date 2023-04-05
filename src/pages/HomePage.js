@@ -5,7 +5,6 @@ import Features from "../components/HomePageComponents/Features/Features";
 import Companies from "../components/HomePageComponents/Companies/Companies";
 import Users from "../components/HomePageComponents/Users/Users";
 import HelpDesk from "../components/HomePageComponents/HelpDesk/HelpDesk";
-import Footer from "../components/HomePageComponents/Footer/Footer";
 import ShowCase from "../components/ShowCase/ShowCase";
 import HomeServices from "../components/HomePageComponents/HomeServices/HomeServices";
 import OurClients from "../components/HomePageComponents/OurClients/OurClients"

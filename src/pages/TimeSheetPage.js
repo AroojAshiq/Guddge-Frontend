@@ -12,7 +12,7 @@ import {
   SettingIcon,
 } from "../components/iconComponent/Icon";
 
-export default function TimeSheetPage({ darkMode }) {
+export default function TimeSheetPage() {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
 

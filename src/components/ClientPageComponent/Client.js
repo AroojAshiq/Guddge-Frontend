@@ -37,7 +37,7 @@ function Client() {
         </div>
 
         <div className=" justify-items-center grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 xl-gap-x-12 xl:gap-y-12 lg:gap-x-4 lg:gap-y-20 md:gap-x-20 sm:gap-y-8 relative z-20 ">
-          <div className="xl:w-[400px]  lg:w-[390px] lg:h-auto md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg text-white   xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px]  lg:w-[390px]  md:w-[330px]  w-[330px] p-4 mt-8 h-auto rounded-lg text-white  xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -47,7 +47,7 @@ function Client() {
                 />
               </div>
             </div>
-            <div className="w-full ">
+            <div className="w-full h-auto">
               <h2 className="  text-lg text-black  dark:text-white rounded-lg font-medium title-font mb-6 text-center ">
                 Amtrak <br></br>
                 <span className="text-[#444444] dark:text-[#959CB1] text-md">
@@ -70,7 +70,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px]  lg:w-[390px] lg:h-auto md:w-[330px]  w-[330px] h-auto  p-4 mt-8 rounded-lg text-white   xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px]  lg:w-[390px]  md:w-[330px]  w-[330px] h-auto  p-4 mt-8 rounded-lg text-white   xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -104,7 +104,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] lg:h-auto md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] lg:w-[390px]  md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -138,7 +138,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] lg:h-auto md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -172,7 +172,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] lg:h-auto md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B]  ">
+          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B]  ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -206,7 +206,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] lg:h-auto md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -240,7 +240,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] lg:h-auto  md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] lg:w-[390px]  md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -274,7 +274,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] lg:h-auto md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -308,7 +308,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px]  lg:w-[390px] lg:h-auto md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px]  lg:w-[390px] md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
