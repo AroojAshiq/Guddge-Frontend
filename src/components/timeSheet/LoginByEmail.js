@@ -3,10 +3,10 @@ import gruddge from "../../assests/guddgeLogo.svg";
 import cyber from "../../assests/Cyber.svg";
 import * as Yup from "yup";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { useNavigate } from "react-router-dom";
-import { loginUser } from "../../Api";
-import Swal from "sweetalert2";
-import { useUserContext } from "../../context";
+// import { useNavigate } from "react-router-dom";
+// import { loginUser } from "../../Api";
+// import Swal from "sweetalert2";
+// import { useUserContext } from "../../context";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -16,8 +16,8 @@ const loginSchema = Yup.object().shape({
 });
 
 export default function LoginByEmail() {
-  const navigation = useNavigate();
-  const { setUser } = useUserContext();
+  // const navigation = useNavigate();
+  // const { setUser } = useUserContext();
   return (
     <div className="w-full flex justify-center items-center bg-[#F5F5F5] p-5 ">
       <div className="max-w-[700px] bg-white rounded-2xl flex justify-center py-12 lg:px-16 px-8   shadow-lg">
@@ -35,37 +35,37 @@ export default function LoginByEmail() {
                 password: "",
               }}
               validationSchema={loginSchema}
-              onSubmit={async (values) => {
-                try {
-                  const res = await loginUser(values);
-                  if (res?.data?.success) {
-                    localStorage.setItem("user", JSON.stringify(res?.data));
-                    setUser({ isAuth: true, ...res?.data });
-                    Swal.fire({
-                      width: "20em",
-                      height: "20em",
-                      position: "top-end",
-                      icon: "success",
-                      title: "Signedup successfully",
-                      showConfirmButton: false,
-                      timer: 1500,
-                    });
-                    navigation("/dashboard");
-                  }
-                } catch (error) {
-                  Swal.fire({
-                    width: "20em",
-                    height: "20em",
-                    title: `${error?.data?.message}`,
-                    showClass: {
-                      popup: "animate__animated animate__fadeInDown",
-                    },
-                    hideClass: {
-                      popup: "animate__animated animate__fadeOutUp",
-                    },
-                  });
-                }
-              }}
+              // onSubmit={async (values) => {
+              //   try {
+              //     const res = await loginUser(values);
+              //     if (res?.data?.success) {
+              //       localStorage.setItem("user", JSON.stringify(res?.data));
+              //       setUser({ isAuth: true, ...res?.data });
+              //       Swal.fire({
+              //         width: "20em",
+              //         height: "20em",
+              //         position: "top-end",
+              //         icon: "success",
+              //         title: "Signedup successfully",
+              //         showConfirmButton: false,
+              //         timer: 1500,
+              //       });
+              //       navigation("/dashboard");
+              //     }
+              //   } catch (error) {
+              //     Swal.fire({
+              //       width: "20em",
+              //       height: "20em",
+              //       title: `${error?.data?.message}`,
+              //       showClass: {
+              //         popup: "animate__animated animate__fadeInDown",
+              //       },
+              //       hideClass: {
+              //         popup: "animate__animated animate__fadeOutUp",
+              //       },
+              //     });
+              //   }
+              // }}
             >
               {({ isSubmitting, errors, touched }) => (
                 <Form>
