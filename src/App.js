@@ -83,7 +83,7 @@ function App() {
           <Route path="/loginbyemail" element={<LoginByEmail />} />
           <Route path="/registerbyemail" element={<RegisterByEmail />} />
           {/* <Route path="/" element={<ProtectedRouted />}> */}
-          <Route path="dashboard" element={<TimeSheetPage />}>
+          <Route path="/dashboard" element={<TimeSheetPage />}>
             <Route index element={<Home />} />
             <Route path="home" element={<Home />} />
             <Route path="admin" element={<Admin />} />
