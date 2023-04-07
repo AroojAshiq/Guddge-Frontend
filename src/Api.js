@@ -65,3 +65,38 @@ export const loginUser = async (user) => {
     return error;
   }
 };
+
+export const userContractor = async (data) => {
+  try {
+    const res = await axios.post(`/dashboard/contractors`, data);
+    return res;
+  } catch (error) {
+    Swal.fire({
+      width: "20em",
+      height: "20em",
+      position: "top-end",
+      icon: "error",
+      title: "Oops...",
+      text: ` ${error?.response?.data?.message}`,
+    });
+    return error;
+  }
+};
+
+export const userClient = async (data) => {
+  try {
+    // console.log(data, "data");
+    const res = await axios.post(`/dashboard/clients`, data);
+    return res;
+  } catch (error) {
+    Swal.fire({
+      width: "20em",
+      height: "20em",
+      position: "top-end",
+      icon: "error",
+      title: "Oops...",
+      text: ` ${error?.response?.data?.message}`,
+    });
+    return error;
+  }
+};

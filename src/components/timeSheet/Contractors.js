@@ -5,7 +5,7 @@ import edit from "../../assests/editIcon.svg";
 import ContractorModal from "./ContractorModal";
 
 export default function Contractors() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const data = [
     {
