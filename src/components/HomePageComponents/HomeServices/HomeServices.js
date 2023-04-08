@@ -5,21 +5,21 @@ import { useNavigate } from "react-router-dom";
 
 const HomeServices = () => {
   const navigate = useNavigate();
-
+  
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1500, min: 1000 },
       items: 4,
       slidesToSlide: 1, // optional, default to 1.
     },
 
-    laptop: {
-      breakpoint: { max: 1024, min: 768 },
-      items: 3,
-      slidesToSlide: 1, // optional, default to 1.
+    laptop:{
+      breakpoint: { max: 1100, min: 800 },
+      items: 2,
+      slidesToSlide: 1,
     },
     tablet: {
-      breakpoint: { max: 768, min: 600 },
+      breakpoint: { max: 800, min: 600 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -29,11 +29,12 @@ const HomeServices = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+
   return (
     <section className=" bg-[#CDCDCD42] dark:bg-[#07343A] text-black-600 body-font flex justify-center items-center  ">
       <div className="choose container py-24 px-4 space-y-16 relative">
         <div className="flex flex-wrap w-full  mb-8 flex-col items-center">
-          <h1 className=" xl:text-[45px] text-3xl font-bold leading-[56px] title-font mb-2 text-[#4B4B4B] dark:text-white">
+          <h1 className=" xl:text-[45px] text-4xl font-medium font-bold leading-[56px] title-font mb-2 text-[#4B4B4B] dark:text-white">
             Our Services
           </h1>
           <p className="lg:w-[530px] md:[520px] w-full text-lg font-normal leading-[29px] text-[#515151] dark:text-[#959CB1]  mt-4 text-center ">
@@ -41,7 +42,7 @@ const HomeServices = () => {
             the majority have suffered alteration in some form.
           </p>
         </div>
-        
+
         <Carousel
           showDots={false}
           responsive={responsive}
@@ -52,6 +53,8 @@ const HomeServices = () => {
           transitionDuration={300}
           containerclassName="main_card1   "
           removeArrowOnDeviceType={[""]}
+       
+         
         >
           <div className="choose_card xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px] xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6 ml-4 mr-5 bg-[#F9F9F9]  dark:bg-[#04505B] rounded-2xl space-y-4 ">
             <div className="  card_title_flex  space-y-4 ">
@@ -69,7 +72,7 @@ const HomeServices = () => {
                 <li className="flex items-center mb-1 text-xs leading-[28px]  font-medium text-[#717171] dark:text-[#959CB1] ">
                   Business Intelligence Architecture and Solution Delivery
                 </li>
-                
+
                 <li className="flex items-center mb-1 text-xs leading-[28px]  font-medium  text-[#717171]  dark:text-[#959CB1]">
                   Migration and Version Control Solutions
                 </li>
@@ -87,12 +90,12 @@ const HomeServices = () => {
               </button>
             </div>
           </div>
-          
+
           <div className="choose_card xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12  p-[32px]   xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6 ml-4 mr-5  bg-[#F9F9F9]  dark:bg-[#04505B] rounded-2xl space-y-4 ">
             <div className="  card_title_flex  space-y-4">
               <img src="./showcase-2.svg" className="w-full " alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">
-                Technology
+              Technology
               </div>
             </div>
             <div className="choose_content">
@@ -100,7 +103,7 @@ const HomeServices = () => {
                 <li className="flex items-center mb-1  text-xs leading-[28px]  font-medium  text-[#717171]  dark:text-[#959CB1]">
                   Business Intelligence Architecture and Solution Delivery
                 </li>
-                
+
                 <li className="flex items-center mb-1  text-xs leading-[28px]  font-medium   text-[#717171] dark:text-[#959CB1]">
                   Migration and Version Control Solutions
                 </li>
@@ -118,12 +121,12 @@ const HomeServices = () => {
               </button>
             </div>
           </div>
-          
-          <div className="choose_card xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px]  xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6  ml-4 mr-4 bg-[#F9F9F9]  dark:bg-[#04505B] rounded-2xl space-y-4 ">
+
+          <div className="choose_card xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px]  xl:ml-0 xl:mr-0 lg:ml-6 lg:mr-6 md:ml-6 md:mr-6  ml-4 mr-4 bg-[#F9F9F9]  dark:bg-[#04505B] rounded-2xl space-y-4 ">
             <div className="  card_title_flex  space-y-4">
               <img src="./showcase-3.svg" className="w-full " alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">
-                Data Warehouse
+              Data Warehouse
               </div>
             </div>
             <div className="choose_content">
@@ -131,7 +134,7 @@ const HomeServices = () => {
                 <li className="flex items-center mb-1 text-xs leading-[28px]  font-medium     text-[#717171]  dark:text-[#959CB1]">
                   Business Intelligence Architecture and Solution Delivery
                 </li>
-               
+
                 <li className="flex items-center mb-1  text-xs leading-[28px]  text-[#717171]  dark:text-[#959CB1]">
                   Migration and Version Control Solutions
                 </li>
@@ -149,12 +152,12 @@ const HomeServices = () => {
               </button>
             </div>
           </div>
-          
-          <div className="choose_card xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12  p-[32px]  xl:ml-0 xl:mr-0 lg:ml-10 lg:mr-10 md:ml-6 md:mr-6 ml-4 mr-4  bg-[#F9F9F9]   dark:bg-[#04505B] rounded-2xl space-y-4">
+
+          <div className="choose_card xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12  p-[32px]  xl:ml-0 xl:mr-0 lg:ml-6 lg:mr-6 md:ml-6 md:mr-6 ml-4 mr-4  bg-[#F9F9F9]   dark:bg-[#04505B] rounded-2xl space-y-4">
             <div className="  card_title_flex  space-y-4">
               <img src="./showcase-4.svg" className=" w-full" alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">
-                Training
+              Training
               </div>
             </div>
             <div className="choose_content">
@@ -162,7 +165,7 @@ const HomeServices = () => {
                 <li className="flex items-center mb-1 text-xs leading-[28px]  text-[#717171] dark:text-[#959CB1] ">
                   Business Intelligence Architecture and Solution Delivery
                 </li>
-                
+
                 <li className="flex items-center mb-1 text-xs leading-[28px]  text-[#717171] dark:text-[#959CB1] ">
                   Migration and Version Control Solutions
                 </li>
@@ -181,7 +184,7 @@ const HomeServices = () => {
             </div>
           </div>
         </Carousel>
-        ​
+
         <div className=" w-full flex justify-center  ">
           <button
             type="submit"

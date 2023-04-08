@@ -23,27 +23,27 @@ function Article() {
       <div className="container w-full space-y-12 px-6 py-12 mx-auto relative z-20 ">
         <div className="flex justify-between lg:flex-row md:flex-row flex-col ">
           <div className="flex flex-wrap lg:w-7/12 md:w-7/12 w-full  mb-8 flex-col ">
-            <h1 className=" text-sm font-bold title-font mb-2 text-[#959CB1] ">
+            <h1 className=" text-base leading-[24px] font-medium mb-2 text-[#959CB1] ">
               Home {" > "}
-              <span className="text-sm font-bold title-font mb-2 text-black dark:text-white">
+              <span className="text-base leading-[24px] font-medium mb-2 text-black dark:text-white">
                 Articles
               </span>
             </h1>
-            <h1 className="sm:text-3xl text-2xl lg:text-start md:text-start text-center font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
+            <h1 className="xl:text-[45px] text-3xl leading-[56px] font-bold lg:text-start md:text-start text-center font-medium  font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
               Articles
             </h1>
-            <p className="lg:w-3/4 md:w-4/5 w-full  lg:text-start md:text-start text-center leading-relaxed text-[#515151] dark:text-[#959CB1]  mt-2 ">
+            <p className=" xl:w-[550px] w-full lg:text-start md:text-start text-center  text-lg font-normal leading-[29px] text-[#515151] dark:text-[#959CB1]  mt-2 ">
               There are many variations of passages of Lorem Ipsum available but
               the majority have suffered alteration in some form.
             </p>
           </div>
-          <div className="flex justify-center items-center mt-8 ">
-            <div className="mb-3 xl:w-96  h-16 p-4  flex  items-center bg-white  dark:bg-[#003036] rounded-lg">
-              <div className="relative flex justify-center w-full flex-wrap items-stretch dark:bg-[#003036]  gap-6 bg-white   ">
+          <div className="flex justify-center items-center lg:mt-8 md:mt-8 ">
+            <div className="mb-3 xl:w-[434px]  h-[80px] p-4  flex  items-center bg-white dark:bg-[#003036] rounded-lg">
+              <div className="relative  flex flex justify-center w-full flex-wrap items-stretch  gap-6 ">
                 <input
                   type="search"
-                  className="relative m-0 -mr-px block border-none outline-none w-[1%] min-w-0 flex-auto rounded-lg  bg-[#ECECEC] dark:bg-[#01434B]     px-3 py-1.5 text-base font-normal text-neutral-700 transition duration-300 ease-in-out  focus:text-neutral-700  dark:text-neutral-200 dark:placeholder:text-neutral-200"
-                  placeholder="Search Article or Topic"
+                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC] dark:bg-[#01434B] border-neutral-300 dark:border-[#04505B] bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
+                  placeholder="Search"
                   aria-label="Search"
                   aria-describedby="button-addon1"
                 />
@@ -71,8 +71,8 @@ function Article() {
             </div>
           </div>
         </div>
-        <div className="justify-items-center lg:gap-x-8   grid lg:grid-cols-3 md:grid-cols-2 sm:grid-col-1 gap-16 relative z-20 ">
-          <div className=" xl:w-96  md:w-80 w-80   rounded-lg bg-white-900 text-white  bg-[#FFFFFF] dark:bg-[#04505B]  ">
+        <div className="flex flex-wrap  justify-items-center   grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 xl:gap-16 lg:gap-x-6  lg:gap-y-14 md:gap-x-2 md:gap-y-12 gap-10 relative z-20 ">
+          <div className=" xl:w-96 lg:w-[410px]   md:w-[340px] w-80   rounded-lg bg-white-900 text-white  bg-[#FFFFFF] dark:bg-[#04505B]  ">
             <div className="w-full rounded-lg flex justify-center items-center b ">
               <img
                 alt="gallery"
@@ -82,11 +82,11 @@ function Article() {
             </div>
 
             <div className=" w-[96-4]  ">
-              <h1 className=" text-black dark:text-white text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
+              <h1 className=" text-black dark:text-white xl:text-2xl lg:text-2xl md:text-xl text-xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
                 Best UI components for modern websites
               </h1>
 
-              <p className=" text-black dark:text-[#959CB1] text-sm font-normal  mt-6 ml-6 pr-6  text-left">
+              <p className=" text-black dark:text-[#959CB1] text-base  font-medium leading-[24px] mt-6 ml-6 pr-6  text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Cras sit amet dictum neque, laoreet
@@ -95,7 +95,7 @@ function Article() {
               </p>
             </div>
             <div className=" mt-8 bg-white dark:bg-[#04505B] rounded-lg flex  justify-items-center mb-4  ">
-              <div className=" xl:w-1/6 lg:w-1/4 md:w-1/4 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
+              <div className=" xl:w-1/6 lg:w-1/6 md:w-32 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block "
@@ -103,11 +103,11 @@ function Article() {
                 />
               </div>
               <div className=" rounded-lg  flex justify-center items-center ">
-                <h1 className=" text-black dark:text-white text-sm ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson
+                <h1 className=" text-black dark:text-white text-sm font-medium  leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
+                  Mark Nelson <br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
                 </h1>
               </div>
-              <div className="w-32 h-16 flex justify-end items-center ml-8 lg:mt-2 md:mt-2 mt-5 ">
+              <div className="w-32 h-16   flex justify-end items-center ml-8 lg:mt-2 md:mt-6 mt-5 ">
                 <button
                   type="button"
                   onClick={() => {
@@ -121,7 +121,7 @@ function Article() {
             </div>
           </div>
 
-          <div className=" xl:w-96  md:w-80 w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B] ">
+          <div className=" xl:w-96 lg:w-[410px]  md:w-[340px] w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B] ">
             <div className="w-full rounded-lg flex justify-center items-center ">
               <img
                 alt="gallery"
@@ -131,11 +131,11 @@ function Article() {
             </div>
 
             <div className=" w-[96-4]  ">
-              <h1 className=" text-black dark:text-white text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
+              <h1 className=" text-black dark:text-white xl:text-2xl lg:text-2xl md:text-xl  text-xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
                 Best UI components for modern websites
               </h1>
 
-              <p className=" text-black dark:text-[#959CB1] text-sm font-normal  mt-6 ml-6 pr-6  text-left">
+              <p className=" text-black dark:text-[#959CB1] text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Cras sit amet dictum neque, laoreet
@@ -144,7 +144,7 @@ function Article() {
               </p>
             </div>
             <div className=" mt-8 bg-white dark:bg-[#04505B] rounded-lg flex justify-items-start mb-4 ">
-              <div className="xl:w-1/6 lg:w-1/4  md:w-1/4 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
+              <div className="xl:w-1/6 lg:w-1/6  md:w-32 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block "
@@ -152,11 +152,11 @@ function Article() {
                 />
               </div>
               <div className=" rounded-lg   flex items-center  ">
-                <h1 className=" text-black dark:text-white  text-sm ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson
+                <h1 className=" text-black dark:text-white  text-sm  font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
+                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
                 </h1>
               </div>
-              <div className="w-32 h-16 flex justify-end ml-8 lg:mt-2 md:mt-2 mt-5  items-center ">
+              <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
                 <button
                   type="button"
                   onClick={() => {
@@ -170,7 +170,7 @@ function Article() {
             </div>
           </div>
 
-          <div className=" xl:w-96  md:w-80 w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B]">
+          <div className=" xl:w-96 lg:w-[410px] md:w-[340px] w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B]">
             <div className="w-full rounded-lg flex justify-center items-center ">
               <img
                 alt="gallery"
@@ -180,11 +180,11 @@ function Article() {
             </div>
 
             <div className=" w-[96-4]  ">
-              <h1 className=" text-black dark:text-white text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
+              <h1 className=" text-black dark:text-white dark:text-white xl:text-2xl lg:text-2xl  text-xl md:text-xl  font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
                 Best UI components for modern websites
               </h1>
 
-              <p className=" text-black dark:text-[#959CB1]  text-sm font-normal  mt-6 ml-6 pr-6  text-left">
+              <p className=" text-black dark:text-[#959CB1] text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Cras sit amet dictum neque, laoreet
@@ -193,7 +193,7 @@ function Article() {
               </p>
             </div>
             <div className=" mt-8 bg-white dark:bg-[#04505B] rounded-lg flex justify-items-start mb-4 ">
-              <div className="xl:w-1/6 lg:w-1/4  md:w-1/4 w-32 rounded-lg  mb-2 mt-2  ml-4 \ ">
+              <div className="xl:w-1/6 lg:w-1/6  md:w-32 w-32 rounded-lg  mb-2 mt-2  ml-4 \ ">
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block "
@@ -201,11 +201,11 @@ function Article() {
                 />
               </div>
               <div className=" rounded-lg    flex items-center ">
-                <h1 className=" text-black dark:text-white  text-sm ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson
+                <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
+                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
                 </h1>
               </div>
-              <div className="w-32 h-16 flex justify-end ml-8 lg:mt-2 md:mt-2 mt-5  items-center ">
+              <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
                 <button
                   type="button"
                   onClick={() => {
@@ -219,7 +219,7 @@ function Article() {
             </div>
           </div>
 
-          <div className=" xl:w-96  md:w-80 w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF] dark:bg-[#04505B] ">
+          <div className=" xl:w-96 lg:w-[410px]  md:w-[340px] w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF] dark:bg-[#04505B] ">
             <div className="w-full rounded-lg flex justify-center items-center ">
               <img
                 alt="gallery"
@@ -229,11 +229,11 @@ function Article() {
             </div>
 
             <div className=" w-[96-4]  ">
-              <h1 className=" text-black dark:text-white text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
+              <h1 className=" text-black dark:text-white xl:text-2xl lg:text-2xl md:text-xl  text-xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
                 Best UI components for modern websites
               </h1>
 
-              <p className=" text-black dark:text-[#959CB1] text-sm font-normal  mt-6 ml-6 pr-6  text-left">
+              <p className=" text-black dark:text-[#959CB1] text-base font-medium leading-[24px]   mt-6 ml-6 pr-6  text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Cras sit amet dictum neque, laoreet
@@ -242,7 +242,7 @@ function Article() {
               </p>
             </div>
             <div className=" mt-8 bg-white dark:bg-[#04505B] rounded-lg flex justify-items-start mb-4 ">
-              <div className=" xl:w-1/6 lg:w-1/4  md:w-1/4 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
+              <div className=" xl:w-1/6 lg:w-1/6  md:w-32 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block "
@@ -250,11 +250,11 @@ function Article() {
                 />
               </div>
               <div className=" rounded-lg   flex items-center  ">
-                <h1 className=" text-black dark:text-white  text-sm ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson
+                <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
+                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
                 </h1>
               </div>
-              <div className="w-32 h-16 flex justify-end ml-8 lg:mt-2 md:mt-2 mt-5 items-center ">
+              <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5 items-center ">
                 <button
                   type="button"
                   onClick={() => {
@@ -268,7 +268,7 @@ function Article() {
             </div>
           </div>
 
-          <div className=" xl:w-96  md:w-80 w-80   rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B]">
+          <div className=" xl:w-96 lg:w-[410px] md:w-[340px] w-80   rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B]">
             <div className="w-full rounded-lg flex justify-center items-center ">
               <img
                 alt="gallery"
@@ -278,11 +278,11 @@ function Article() {
             </div>
 
             <div className=" w-[96-4]  ">
-              <h1 className=" text-black dark:text-white text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
+              <h1 className=" text-black dark:text-white xl:text-2xl lg:text-2xl md:text-xl  text-xl font-bold  leading-[32px] mt-6 ml-6 pr-6  text-left">
                 Best UI components for modern websites
               </h1>
 
-              <p className=" text-black dark:text-[#959CB1] text-sm font-normal  mt-6 ml-6 pr-6  text-left">
+              <p className=" text-black dark:text-[#959CB1] text-base font-medium leading-[24px]   mt-6 ml-6 pr-6  text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Cras sit amet dictum neque, laoreet
@@ -291,7 +291,7 @@ function Article() {
               </p>
             </div>
             <div className=" mt-8 bg-white  dark:bg-[#04505B] rounded-lg flex justify-items-start  mb-4">
-              <div className="xl:w-1/6 lg:w-1/4  md:w-1/4 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
+              <div className="xl:w-1/6 lg:w-1/6  md:w-32 w-32 rounded-lg  mb-2 mt-2  ml-4  ">
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block "
@@ -299,11 +299,11 @@ function Article() {
                 />
               </div>
               <div className=" rounded-lg   flex items-center  ">
-                <h1 className=" text-black dark:text-white  text-sm ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson
+                <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
+                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
                 </h1>
               </div>
-              <div className="w-32 h-16 flex justify-end ml-8 lg:mt-2 md:mt-2 mt-5  items-center ">
+              <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
                 <button
                   type="button"
                   onClick={() => {
@@ -317,7 +317,7 @@ function Article() {
             </div>
           </div>
 
-          <div className=" xl:w-96  md:w-80 w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B]">
+          <div className=" xl:w-96 lg:w-[410px] md:w-[340px] w-80    rounded-lg bg-white-900 text-white  bg-[#FFFFFF]  dark:bg-[#04505B]">
             <div className="w-full rounded-lg flex justify-center items-center ">
               <img
                 alt="gallery"
@@ -327,11 +327,11 @@ function Article() {
             </div>
 
             <div className=" w-[96-4]  ">
-              <h1 className=" text-black dark:text-white text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
+              <h1 className=" text-black dark:text-white  xl:text-2xl lg:text-2xl md:text-xl  text-xl font-bold leading-[32px]    mt-6 ml-6 pr-6  text-left">
                 Best UI components for modern websites
               </h1>
 
-              <p className=" text-black dark:text-[#959CB1] text-sm font-normal  mt-6 ml-6 pr-6  text-left ">
+              <p className=" text-black dark:text-[#959CB1] text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Cras sit amet dictum neque, laoreet
@@ -340,7 +340,7 @@ function Article() {
               </p>
             </div>
             <div className=" mt-8 bg-white dark:bg-[#04505B] rounded-lg flex justify-items-start mb-4  ">
-              <div className=" xl:w-1/6 lg:w-1/4  md:w-1/4 w-32 rounded-lg  mb-2 mt-2  ml-4 ">
+              <div className=" xl:w-1/6 lg:w-1/6  md:w-32 w-32 rounded-lg  mb-2 mt-2  ml-4 ">
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block "
@@ -348,11 +348,11 @@ function Article() {
                 />
               </div>
               <div className=" rounded-lg    flex items-center ">
-                <h1 className=" text-black dark:text-white  text-sm ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson
+                <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
+                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
                 </h1>
               </div>
-              <div className="w-32 h-16 flex justify-end ml-8 lg:mt-2 md:mt-2 mt-5  items-center ">
+              <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
                 <Link to="/article-view">
                   <button
                     type="button"
@@ -366,17 +366,17 @@ function Article() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center border-t border-gray-200 bg-[#F5F5F5] dark:bg-[#07343A]  px-4 py-3 sm:px-6 ">
+        <div className="flex items-center justify-center  bg-[#F5F5F5] dark:bg-[#07343A]  px-4 py-3 sm:px-6 ">
           <div className="flex flex-1 justify-center sm:hidden">
             <Link
               to="/"
-              className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 dark:text-[#959CB126]  hover:bg-gray-50"
+              className="relative inline-flex items-center rounded-md border border-gray-300 bg-white dark:bg-[#078CA0] dark:border-[#078CA0]  px-4 py-2 text-sm font-medium text-gray-700 dark:text-white  hover:bg-gray-50"
             >
               Previous
             </Link>
             <Link
               to="/"
-              className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white dark:text-[#959CB126] px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+              className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white dark:bg-[#078CA0] dark:border-[#078CA0] dark:text-white px-7 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
             >
               Next
             </Link>

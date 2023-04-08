@@ -13,6 +13,8 @@ import TeamMembersPage from "./pages/TeamMembersPage";
 import ViewArticle from "./components/Article/ViewArticle";
 import useDarkSide from "./components/HomePageComponents/NavBar/useDarkSide";
 import Footer from "./components/HomePageComponents/Footer/Footer";
+import "./App.css";
+
 import {
   Home,
   LoginByEmail,
@@ -32,6 +34,7 @@ import {
   TSheetAproval,
   TSheetAproved,
   TimeViewSheets,
+  CalenderPage,
 } from "./components/timeSheet";
 // import ProtectedRouted from "./components/timeSheet/ProtectedRoutes";
 import TimeSheetPage from "./pages/TimeSheetPage";
@@ -101,6 +104,7 @@ function App() {
             <Route path="approval" element={<TSheetAproval />} />
             <Route path="approved" element={<TSheetAproved />} />
           </Route>
+          <Route path="calender" element={<CalenderPage />} />
           <Route path="viewtimesheets" element={<TimeViewSheets />} />
           <Route path="setting" element={<Setting />} />
           <Route path="profileSetting" element={<ProfileSetting />} />

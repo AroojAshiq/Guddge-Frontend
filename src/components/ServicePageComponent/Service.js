@@ -21,24 +21,24 @@ function Service() {
       </div>
       <div className="container w-full  px-6 py-12 mx-auto ">
         <div className="flex flex-wrap w-full  mb-8 flex-col ">
-          <h1 className=" text-sm font-bold title-font mb-2 text-[#959CB1]">
+          <h1 className=" text-base leading-[24px] font-medium title-font mb-2 text-[#959CB1]">
             Home{" > "}
-            <span className="text-sm font-bold title-font mb-2 text-black dark:text-white">
+            <span className="text-base leading-[24px] font-medium mb-2 text-black dark:text-white">
               {" "}
               Services
             </span>
           </h1>
-          <h1 className="sm:text-3xl text-2xl lg:text-start md:text-start text-center font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
+          <h1 className="xl:text-[45px] text-4xl leading-[56px] font-bold  lg:text-start md:text-start text-center font-medium font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
             Services
           </h1>
-          <p className="lg:w-1/2 lg:text-start md:text-start text-center leading-relaxed text-[#515151] dark:text-[#959CB1]  mt-4 ">
+          <p className="w-[550px]  lg:text-start md:text-start text-center text-lg font-normal leading-[29px]  text-[#515151] dark:text-[#959CB1]  mt-2 ">
             There are many variations of passages of Lorem Ipsum available but
             the majority have suffered alteration in some form.
           </p>
         </div>
 
         <div className="flex  justify-center relative z-20 mb-8">
-          <div className=" flex flex-wrap lg:w-10/12 md:w-10/12 w-auto h-full py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7]  dark:bg-[#04505B]  border border-[#E7E7E7] dark:border-[#08616CF7]">
+          <div className=" flex flex-wrap lg:w-10/12 md:w-10/12 w-auto border border-black h-full py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7]  dark:bg-[#04505B]  border border-[#E7E7E7] dark:border-[#08616CF7]">
             <div className="  w-11/12   h-full p-6 space-y-4 rounded-2xl bg-white   dark:bg-[#042A2F] ">
               <div className=" w-full  h-3/4 flex justify-center mt-2   ">
                 <img
@@ -55,7 +55,7 @@ function Service() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-white  dark:bg-[#042A2F]   h-16 w-full pl-2 flex items-center   ">
-                    <h1 className=" lg:text-2xl md:text-xl text-sm  font-bold text-black dark:text-white ">
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-xl text-sm  font-bold leading-[32px] text-black dark:text-white ">
                       {" "}
                       Business Intelligence{" "}
                     </h1>
@@ -76,10 +76,10 @@ function Service() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-96">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-52">
                     <div className="w-full h-auto  ">
                       <ul className="list-reset text-black space-y-2   text-grey-darker rounded ">
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -96,7 +96,7 @@ function Service() {
                           Delivery
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -112,7 +112,7 @@ function Service() {
                           Migration and Version Control Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -128,7 +128,7 @@ function Service() {
                           Enterprise Administrative Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -144,7 +144,7 @@ function Service() {
                           Mobile Dashboard Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -160,7 +160,7 @@ function Service() {
                           Web Server Wrapper Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -199,7 +199,7 @@ function Service() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-white  dark:bg-[#042A2F]   h-16 w-full pl-2 flex items-center   ">
-                    <h1 className=" lg:text-2xl md:text-xl text-sm  font-bold text-black dark:text-white ">
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-xl text-sm leading:[32px] font-bold text-black dark:text-white ">
                       {" "}
                       Technology{" "}
                     </h1>
@@ -220,10 +220,10 @@ function Service() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-96">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-52">
                     <div className="w-full h-auto  ">
                       <ul className="list-reset text-black space-y-2   text-grey-darker rounded ">
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -240,7 +240,7 @@ function Service() {
                           Delivery
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -256,7 +256,7 @@ function Service() {
                           Migration and Version Control Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -272,7 +272,7 @@ function Service() {
                           Enterprise Administrative Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -288,7 +288,7 @@ function Service() {
                           Mobile Dashboard Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -304,7 +304,7 @@ function Service() {
                           Web Server Wrapper Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -363,10 +363,10 @@ function Service() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-96">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-52">
                     <div className="w-full h-auto  ">
                       <ul className="list-reset text-black space-y-2   text-grey-darker rounded ">
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -383,7 +383,7 @@ function Service() {
                           Delivery
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -399,7 +399,7 @@ function Service() {
                           Migration and Version Control Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -415,7 +415,7 @@ function Service() {
                           Enterprise Administrative Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -431,7 +431,7 @@ function Service() {
                           Mobile Dashboard Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -447,7 +447,7 @@ function Service() {
                           Web Server Wrapper Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -485,7 +485,7 @@ function Service() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-white  dark:bg-[#042A2F]   h-16 w-full pl-2 flex items-center   ">
-                    <h1 className=" lg:text-2xl md:text-xl text-sm  font-bold text-black dark:text-white ">
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-xl text-sm  leading-[32px] font-bold text-black dark:text-white ">
                       {" "}
                       Training
                       {" "}
@@ -507,10 +507,10 @@ function Service() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-96">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-52">
                     <div className="w-full h-auto  ">
                       <ul className="list-reset text-black space-y-2   text-grey-darker rounded ">
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2">
+                        <li className="flex items-center mb-1 text-lg  font-medium leading-[28px] text-[#959CB1] gap-2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -527,7 +527,7 @@ function Service() {
                           Delivery
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -543,7 +543,7 @@ function Service() {
                           Migration and Version Control Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -559,7 +559,7 @@ function Service() {
                           Enterprise Administrative Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -575,7 +575,7 @@ function Service() {
                           Mobile Dashboard Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"
@@ -591,7 +591,7 @@ function Service() {
                           Web Server Wrapper Solutions
                         </li>
 
-                        <li className="flex items-center mb-1 text-lg  font-normal text-[#959CB1] gap-2 ">
+                        <li className="flex items-center mb-1  text-lg  font-medium leading-[28px] text-[#959CB1] gap-2 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="10"

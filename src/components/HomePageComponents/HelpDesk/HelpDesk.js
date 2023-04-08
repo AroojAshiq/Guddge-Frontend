@@ -6,13 +6,13 @@ const SignupForm = () => {
   return (
     <section className=" bg-[#F5F5F5] dark:bg-[#04505B] text-black-600 body-font  flex justify-center items-center  ">
       <div className="container py-24  flex  justify-center items-center    ">
-        <div className=" w-full flex justify-center items-center lg:flex-row flex-col space-y-8 lg:px-0 md:px-0 px-4   ">
-          <div className="xl:w-[800px] lg:w-[550px] md:w-[600px] sm:w-3/5 p-4  mt-8 bg-white dark:bg-[#0E292D] rounded-lg shadow-lg  flex justify-center items-center flex-col ">
+        <div className=" w-full flex justify-center items-center lg:flex-row flex-col space-y-8 xl:ml-6 lg:ml-9 md:ml-0  ml-0  ">
+          <div className="xl:w-[850px] lg:w-[550px] md:w-[600px] w-11/12 p-4   mt-8 bg-white dark:bg-[#0E292D] rounded-lg shadow-lg  flex justify-center items-center flex-col ">
             <div className="flex  p-4 justify-start   w-full  flex-col ">
-              <h1 className="sm:text-2xl text-base  font-bold  mb-2 text-[#093E46] dark:text-white lg:text-start md:text-start text-center">
+              <h1 className="xl:text-3xl text-2xl leading-[36px] font-bold   mb-2 text-[#093E46] dark:text-white lg:text-start md:text-start text-center">
                 Need Help? Or Want To See Us in Action ?
               </h1>
-              <p className=" leading-relaxed text-sm font-normal text-[#515151]   dark:text-[#959CB1] lg:text-start md:text-start text-center mt-2 ">
+              <p className=" leading-[24px] text-base font-medium  text-[#515151]   dark:text-[#959CB1] lg:text-start md:text-start text-center mt-2 ">
                 Our support team will get back to you ASAP via email.
               </p>
             </div>
@@ -41,14 +41,15 @@ const SignupForm = () => {
               {(formik) => (
                 <form
                   onSubmit={formik.handleSubmit}
-                  className=" w-full space-y-8  "
+                  className=" w-full space-y-7  "
                 >
                   <div className="w-full h-auto p-4 flex items-center lg:flex-row md:flex-row flex-col lg:justify-start gap-2 ">
-                    <div className=" lg:w-6/12 md:w-6/12 w-full">
+                    <div className=" lg:w-6/12 md:w-6/12 w-full space-y-2 ">
+                    <label className="text-black dark:text-white text-sm font-medium leading-[20px]"> Your Name</label>
                       <input
                         id="name"
                         placeholder="Enter your name"
-                        className="  bg-[#DDEBED] dark:bg-[#04505B] text-black dark:text-white w-full"
+                        className="  bg-[#DDEBED] dark:bg-[#04505B] dark:border-[#04505B] h-[50px] text-black dark:text-white w-full rounded-md"
                         type="text"
                         {...formik.getFieldProps("name")}
                       />
@@ -56,11 +57,12 @@ const SignupForm = () => {
                         <div className="text-red-500">{formik.errors.name}</div>
                       ) : null}
                     </div>
-                    <div className="lg:w-6/12 md:w-6/12 w-full  ">
+                    <div className="lg:w-6/12 md:w-6/12 w-full space-y-2 ">
+                    <label className="text-black dark:text-white text-sm font-medium leading-[20px]"> Your Email</label>
                       <input
                         id="email"
-                        placeholder="email"
-                        className="bg-[#DDEBED] dark:bg-[#04505B] text-black dark:text-white w-full"
+                        placeholder="Enter your email"
+                        className="bg-[#DDEBED] dark:bg-[#04505B] dark:border-[#04505B] h-[50px] text-black dark:text-white w-full rounded-md"
                         type="email"
                         {...formik.getFieldProps("email")}
                       />
@@ -72,10 +74,12 @@ const SignupForm = () => {
                     </div>
                   </div>
                   <div className="w-full h-40 p-4  flex justify-center">
-                    <div className=" w-full hfull ">
+                    
+                    <div className=" w-full hfull  space-y-2">
+                    <label className="text-black dark:text-white text-sm font-medium leading-[20px]"> Your Message</label>
                       <textarea
                         id="text"
-                        className=" w-full h-full bg-[#DDEBED] dark:bg-[#04505B] text-black dark:text-white "
+                        className=" w-full h-full bg-[#DDEBED] dark:bg-[#04505B] dark:border-[#04505B]  text-black dark:text-white rounded-md "
                         type="text"
                         {...formik.getFieldProps("text")}
                       />
@@ -87,7 +91,7 @@ const SignupForm = () => {
                   <div className="p-4 flex lg:justify-start md:justify-start justify-center">
                     <button
                       type="submit"
-                      className=" text-white  bg-[#0E5761] dark:bg-[#04505B] hover:text-white hover:bg-gradient-to-b from-[#3799CC] to-[#374BCC] focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2 "
+                      className=" text-white  w-[124px] h-[56px] bg-[#0E5761] dark:bg-[#04505B] hover:text-white hover:bg-gradient-to-b from-[#3799CC] to-[#374BCC] focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-md text-base leading-[24px] px-[35px] py-[16px] text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2 "
                     >
                       Submit
                     </button>
@@ -97,11 +101,11 @@ const SignupForm = () => {
             </Formik>
           </div>
 
-          <div className=" lg:w-[450px] lg:h-[600px] md:w-[450px] md:h-[600px] w-[full]   flex justify-center items-center   ">
+          <div className="lg:w-[450px] lg:h-[600px] md:w-[450px] md:h-[600px] xl:block lg:block md:block hidden  flex justify-center items-center   ">
            
               <img
                 alt="gallery"
-                className="  h-[570px] object-cover  object-center block mt-12  "
+                className="  h-[616px] object-cover rounded-lg  object-center block mt-6 lg:ml-0 md:ml-0 ml-0 "
                 src="./help-desk.svg"
               />
          

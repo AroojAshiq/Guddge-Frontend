@@ -7,18 +7,18 @@ import Users from "../components/HomePageComponents/Users/Users";
 import HelpDesk from "../components/HomePageComponents/HelpDesk/HelpDesk";
 import ShowCase from "../components/ShowCase/ShowCase";
 import HomeServices from "../components/HomePageComponents/HomeServices/HomeServices";
-import OurClients from "../components/HomePageComponents/OurClients/OurClients"
+import OurClients from "../components/HomePageComponents/OurClients/OurClients";
 function HomePage({ darkMode, setDarkMode }) {
   // console.log(darkMode, "dfghjk");
   return (
     <>
       <Slide setDarkMode={setDarkMode} darkMode={darkMode} />
-      <Features setDarkMode={setDarkMode} darkMode={darkMode}  />
+      <Features setDarkMode={setDarkMode} darkMode={darkMode} />
       <Companies></Companies>
       <Users></Users>
-      <HomeServices/>
-      <ShowCase/>
-      <OurClients/>
+      <HomeServices />
+      <ShowCase />
+      <OurClients />
       <HelpDesk></HelpDesk>
     </>
   );

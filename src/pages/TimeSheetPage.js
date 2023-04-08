@@ -10,6 +10,7 @@ import {
   ArrowIcon,
   ProjectIcon,
   SettingIcon,
+  CalenderIcon,
 } from "../components/iconComponent/Icon";
 
 export default function TimeSheetPage() {
@@ -230,6 +231,23 @@ export default function TimeSheetPage() {
               )}
             </NavLink>
 
+            <NavLink to="/dashboard/calender">
+              {({ isActive }) => (
+                <li
+                  className={`flex items-center ${
+                    isActive
+                      ? "bg-[#34A2B2] text-white"
+                      : "bg-white text-[#64748B]"
+                  }  justify-center hover:bg-[#34A2B2] hover:text-white px-4`}
+                >
+                  <div className="w-[282px] h-[52px] flex items-center">
+                    <CalenderIcon />
+                    <p className="font-normal text-[14px] ml-5 ">Calendar</p>
+                  </div>
+                </li>
+              )}
+            </NavLink>
+
             <NavLink to="/dashboard/setting">
               {({ isActive }) => (
                 <li
@@ -279,7 +297,7 @@ export default function TimeSheetPage() {
             </p>
           </div>
         </div>
-        <div className="lg:w-[742px] xl:w-[1026px ] max-w-[950] lg:mx-5 flex items-center justify-center bg-white py-5 px-3">
+        <div className="lg:w-[742px] xl:w-[1026px ] max-w-[950px] lg:mx-5 flex items-center justify-center bg-white py-5 px-3">
           <Outlet />
         </div>
       </div>

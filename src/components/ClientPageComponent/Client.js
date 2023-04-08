@@ -2,6 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 function Client() {
+
   return (
     <section className=" bg-[#F5F5F5]  dark:bg-[#07343A] text-black-600 body-font relative z-0  overflow-hidden ">
       <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] z-10">
@@ -21,23 +22,24 @@ function Client() {
       </div>
       <div className="container w-full space-y-12 px-6 py-12 mx-auto ">
         <div className="flex flex-wrap w-full  mb-8 flex-col ">
-          <h1 className=" text-sm  font-bold title-font mb-2 text-[#959CB1]">
+          <h1 className=" text-base leading-[24px] font-medium  mb-2 text-[#959CB1]">
             Home{" > "}
-            <span className="text-sm  font-bold title-font mb-2 text-black dark:text-white">
+            <span className="text-base leading-[24px] font-medium  mb-2 text-black dark:text-white">
+              {" "}
               clients
             </span>
           </h1>
-          <h1 className="sm:text-3xl text-2xl lg:text-start md:text-start text-center  font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
+          <h1 className="xl:text-[45px] text-4xl leading-[56px] font-bold  lg:text-start md:text-start text-center font-medium font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
             Clients
           </h1>
-          <p className="lg:w-1/2  lg:text-start md:text-start text-center leading-relaxed text-[#515151] dark:text-[#959CB1]  mt-2 ">
+          <p className="xl:w-[550px] w-full  lg:text-start md:text-start text-center  text-lg font-normal leading-[29px] text-[#515151] dark:text-[#959CB1]  mt-2 ">
             There are many variations of passages of Lorem Ipsum available but
             the majority have suffered alteration in some form.
           </p>
         </div>
 
-        <div className=" justify-items-center grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 xl-gap-x-12 xl:gap-y-12 lg:gap-x-4 lg:gap-y-20 md:gap-x-20 sm:gap-y-8 relative z-20 ">
-          <div className="xl:w-[400px]  lg:w-[390px]  md:w-[330px]  w-[330px] p-4 mt-8 h-auto rounded-lg text-white  xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+        <div className="flex flex-wrap  justify-items-center   grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 xl-gap-x-12 xl:gap-y-10 lg:gap-x-2 lg:gap-y-10 md:gap-y-8 md:gap-x-6 sm:gap-y-8 relative z-20 ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -47,15 +49,12 @@ function Client() {
                 />
               </div>
             </div>
-            <div className="w-full h-auto">
-              <h2 className="  text-lg text-black  dark:text-white rounded-lg font-medium title-font mb-6 text-center ">
-                Amtrak <br></br>
-                <span className="text-[#444444] dark:text-[#959CB1] text-md">
-                  Client
-                </span>
+            <div className="w-full ">
+              <h2 className="  text-base font-semibold leading-[20px] text-black  dark:text-white rounded-lg  mb-6 text-center ">
+                Amtrak <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]"> Client</span>
               </h2>
 
-              <p className=" text-black dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6 text-center ">
+              <p className=" text-black dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6 text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -70,7 +69,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px]  lg:w-[390px]  md:w-[330px]  w-[330px] h-auto  p-4 mt-8 rounded-lg text-white   xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto  p-4 mt-8 rounded-lg text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -81,15 +80,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black dark:text-white  rounded-lg font-medium title-font mb-6 text-center ">
-                Bridgestone <br></br>{" "}
-                <span className="text-[#444444] dark:text-[#959CB1] text-md">
-                  {" "}
-                  Client
-                </span>
+              <h2 className="  text-base font-semibold leading-[20px]  text-black dark:text-white  rounded-lg mb-6 text-center ">
+              Bridgestone <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]"> Client</span>
               </h2>
 
-              <p className=" text-black dark:text-[#BBBBBB]  text-base font-normal mb-6 mt-6  text-center ">
+              <p className=" text-black dark:text-[#BBBBBB]  text-base font-normal leading-[24px] mb-6 mt-6  text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -104,7 +99,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px]  md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -115,15 +110,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white rounded-lg font-medium title-font mb-6 text-center ">
-                Barclay’s Capital <br></br>{" "}
-                <span className="text-[#444444]  dark:text-[#959CB1] text-md">
-                  {" "}
-                  Client
-                </span>
+              <h2 className=" text-base font-semibold leading-[20px] text-black  dark:text-white rounded-lg  mb-6 text-center ">
+              Barclay’s Capital <br></br> <span className="text-[#444444]  dark:text-[#959CB1] text-xs font-normal leading-[16px]"> Client</span>
               </h2>
 
-              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6  text-center ">
+              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mt-6 mb-6  text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -138,7 +129,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -149,15 +140,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white  rounded-lg font-medium title-font mb-6 text-center ">
-                Dassault Systems <br></br>{" "}
-                <span className="text-[#444444] dark:text-[#959CB1] text-md">
-                  {" "}
-                  Client
-                </span>
+              <h2 className="  text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
+              Dassault Systems <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px["> Client</span>
               </h2>
 
-              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6 text-center">
+              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6 text-center">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -172,7 +159,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B]  ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]  ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -183,15 +170,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white  rounded-lg font-medium title-font mb-6 text-center ">
-                Enterprise Products Partners L.P. <br></br>{" "}
-                <span className="text-[#444444] dark:text-[#959CB1] text-md">
-                  {" "}
-                  Company
-                </span>
+              <h2 className="  text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
+              Enterprise Products Partners L.P. <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]  " > Company</span>
               </h2>
 
-              <p className=" text-black   dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6   text-center">
+              <p className=" text-black   dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6   text-center">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -206,7 +189,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -217,15 +200,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white rounded-lg font-medium title-font mb-6 text-center ">
-                Lucent Technologies <br></br>{" "}
-                <span className="text-[#444444] dark:text-[#959CB1] text-md">
-                  {" "}
-                  Client
-                </span>
+              <h2 className="  text-base font-semibold leading-[20px] text-black  dark:text-white rounded-lg  mb-6 text-center ">
+              Lucent Technologies <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px] "> Client</span>
               </h2>
 
-              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6  text-center ">
+              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading[24px] mb-6 mt-6  text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -240,7 +219,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px]  md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto  md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -251,15 +230,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white  rounded-lg font-medium title-font mb-6 text-center ">
-                Dassault Systems <br></br>{" "}
-                <span className="text-[#444444] text-md dark:text-[#959CB1]">
-                  {" "}
-                  Client
-                </span>
+              <h2 className=" text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
+              Dassault Systems <br></br> <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]"> Client</span>
               </h2>
 
-              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6  text-center ">
+              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading[24px] mb-6 mt-6  text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -274,7 +249,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px] lg:w-[390px] md:w-[330px]  w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -285,15 +260,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white  rounded-lg font-medium title-font mb-6 text-center ">
-                Enterprise Products Partners L.P. <br></br>{" "}
-                <span className="text-[#444444] text-md dark:text-[#959CB1]">
-                  {" "}
-                  Company
-                </span>
+              <h2 className="  text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
+              Enterprise Products Partners L.P. <br></br> <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]"> Company</span>
               </h2>
 
-              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6  text-center ">
+              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6  text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
@@ -308,7 +279,7 @@ function Client() {
             </div>
           </div>
 
-          <div className="xl:w-[400px]  lg:w-[390px] md:w-[330px] w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-[500px] md:h-auto  bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="  ">
                 <img
@@ -319,15 +290,11 @@ function Client() {
               </div>
             </div>
             <div className="w-full ">
-              <h2 className="  text-lg text-black  dark:text-white rounded-lg font-medium title-font mb-6 text-center ">
-                Lucent Technologies <br></br>{" "}
-                <span className="text-[#444444] text-md dark:text-[#959CB1]">
-                  {" "}
-                  Client
-                </span>
+              <h2 className=" text-base font-semibold leading-[20px]  text-black  dark:text-white rounded-lg  mb-6 text-center ">
+              Lucent Technologies <br></br> <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]"> Client</span>
               </h2>
 
-              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal mb-6 mt-6  text-center ">
+              <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6  text-center ">
                 Business Description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet

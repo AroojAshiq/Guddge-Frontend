@@ -2,7 +2,7 @@ import React from "react";
 
 function Career() {
   return (
-    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A]  border-black border text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
+    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A] border border-black border text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
       <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] xl:-top-8 lg:-top-8 md:-top-2 -top-2  z-10">
         <img
           alt="gallery"
@@ -21,27 +21,28 @@ function Career() {
       <div className="container w-full  px-6 py-12 mx-auto  z-10">
         <div className="flex justify-between lg:flex-row md:flex-row flex-col">
           <div className="flex flex-wrap lg:w-7/12 md:w-7/12 w-full mb-8 flex-col lg:items-start ">
-            <h1 className=" text-sm  font-bold title-font mb-2 text-[#959CB1]">
+            <h1 className="text-base leading-[24px] font-medium  mb-2 text-[#959CB1]">
               Home{" > "}
-              <span className="text-sm  font-bold title-font mb-2 text-black dark:text-white">
+              <span className="text-base leading-[24px] font-medium  mb-2 text-black dark:text-white">
+                {" "}
                 CareerPage
               </span>
             </h1>
-            <h1 className="sm:text-3xl text-2xl lg:text-start md:text-start text-center  font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
+            <h1 className="xl:text-[45px] text-4xl leading-[56px] font-bold lg:text-start md:text-start text-center font-medium font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
               Careers
             </h1>
-            <p className=" lg:w-3/4 lg:text-start md:text-start lg:pr-0 md:pr-3 text-center leading-relaxed text-[#515151] dark:text-[#959CB1]  mt-4 ">
+            <p className=" xl:w-[550px] md:w-[400px] w-full lg:text-start md:text-start text-center text-lg font-normal leading-[29px] text-[#515151] dark:text-[#959CB1]   ">
               Join our dynamic team and make a positive impact. Check out our
               current job openings for growth opportunities.
             </p>
           </div>
 
-          <div className="flex justify-center items-center lg:mt-8 md:mt-8 ">
-            <div className="mb-3 xl:w-96  h-16 p-4  flex  items-center bg-white dark:bg-[#003036] rounded-lg">
-              <div className="relative flex justify-center w-full flex-wrap items-stretch  gap-6 ">
+          <div className="flex justify-center items-center lg:mt-8 md:mt-12 mt-0 ">
+            <div className="mb-3 xl:w-96  h-[80px] p-4  flex  items-center bg-white dark:bg-[#003036] rounded-lg">
+              <div className="relative  flex flex justify-center w-full flex-wrap items-stretch  gap-6 ">
                 <input
                   type="search"
-                  className="relative m-0 -mr-px block w-[1%] min-w-0 flex-auto rounded-lg  bg-[#ECECEC]    dark:bg-[#01434B]   bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out  focus:text-neutral-700  focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
+                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC]    dark:bg-[#01434B] dark:border-[#04505B]   bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out  focus:text-neutral-700  focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
                   placeholder="Search Career"
                   aria-label="Search"
                   aria-describedby="button-addon1"
@@ -73,7 +74,8 @@ function Career() {
 
         <div className="flex  justify-center relative z-20 mb-8 mt-4">
           <div className=" flex flex-wrap lg:w-10/12 md:w-11/12 w-full  h-full py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7] dark:bg-[#04505B]  border border-[#E7E7E7] dark:border-[#08616CF7]">
-            <div className="  w-11/12   h-full  space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+            
+          <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -81,8 +83,8 @@ function Career() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
-                    <h1 className=" lg:text-2xl md:text-2xl text-md  font-bold text-black dark:text-white ">
-                      Data Analyst Require For Guddage
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
+                    Data Analyst Require For Guddage
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -100,11 +102,11 @@ function Career() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] ">
-                    <div className="w-full h-auto  ">
-                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-20 rounded-2xl   ">
-                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1]  ">
-                          <p className="lg:text-lg md:text-lg text-md font-normal lg:text-start md:text-start text-center">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] rounded-lg ">
+                    <div className="w-full h-auto rounded-lg  ">
+                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-12 rounded-2xl   ">
+                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1] ">
+                          <p className=" leading-[28px] text-lg  font-medium lg:text-start md:text-start text-center">
                             <span className="font-semibold dark:text-white ">
                               Company Overview:{" "}
                             </span>{" "}
@@ -132,7 +134,7 @@ function Career() {
                           </p>
 
                           <ul className="list-reset text-[#3F3F3F]  dark:text-[#959CB1]  space-y-2  text-grey-darker rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal     gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]     gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -149,7 +151,7 @@ function Career() {
                               and prioritize business questions and objectives
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -166,7 +168,7 @@ function Career() {
                               statistical methods and software tools
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -184,12 +186,12 @@ function Career() {
                             </li>
                           </ul>
 
-                          <h1 className=" text-lg font-semibold lg:text-start md:text-start text-center dark:text-white">
+                          <h1 className=" text-lg font-semibold leading-[28px]  lg:text-start md:text-start text-center dark:text-white">
                             Requirements:
                           </h1>
 
-                          <ul className="list-reset  space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal  gap-2">
+                          <ul className="list-reset text-black space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -207,7 +209,7 @@ function Career() {
                               or Data Science
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -224,7 +226,7 @@ function Career() {
                               visualization tools such as Tableau or PowerBI
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -241,20 +243,20 @@ function Career() {
                               (EHR) or other healthcare data sources is a plus
                             </li>
                           </ul>
-                          <p className="text-lg  lg:text-start md:text-start text-center">
+                          <p className="text-lg font-medium leading-[28px]   lg:text-start md:text-start text-center">
                             If you are a highly motivated and analytical
                             individual with a passion for improving patient
                             outcomes through data-driven insights, we encourage
                             you to apply for this exciting opportunity.
                           </p>
                         </div>
-                        <div className=" w-full  p-6   space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
+                        <div className=" w-full  p-2 flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
                           <div className="w-auto h-40 flex justify-center items-center    ">
                             <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className="  text-2xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base   font-medium leading-[20px] text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -274,7 +276,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -294,7 +296,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -314,14 +316,14 @@ function Career() {
                             </ul>
                           </div>
 
-                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
+                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-36 md:h-40 h-0.5  lg:mt-5 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
                           <div className="w-auto h-40 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0  ">
                             <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className=" text-2xl  font-bold leading-[32px] font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -341,7 +343,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -361,7 +363,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -389,7 +391,8 @@ function Career() {
               </div>
             </div>
 
-            <div className="  w-11/12   h-full  space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+
+            <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -397,8 +400,8 @@ function Career() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
-                    <h1 className=" lg:text-2xl md:text-2xl text-md  font-bold text-black dark:text-white ">
-                      Digital Marketing Specialist For Guddge
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
+                    Digital Marketing Specialist For Guddge
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -416,11 +419,11 @@ function Career() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] ">
-                    <div className="w-full h-auto  ">
-                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-20 rounded-2xl   ">
-                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1]  ">
-                          <p className="lg:text-lg md:text-lg text-md font-normal lg:text-start md:text-start text-center">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] rounded-lg ">
+                    <div className="w-full h-auto rounded-lg  ">
+                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-12 rounded-2xl   ">
+                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1] ">
+                          <p className=" leading-[28px] text-lg  font-medium lg:text-start md:text-start text-center">
                             <span className="font-semibold dark:text-white ">
                               Company Overview:{" "}
                             </span>{" "}
@@ -448,7 +451,7 @@ function Career() {
                           </p>
 
                           <ul className="list-reset text-[#3F3F3F]  dark:text-[#959CB1]  space-y-2  text-grey-darker rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal     gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]     gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -465,7 +468,7 @@ function Career() {
                               and prioritize business questions and objectives
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -482,7 +485,7 @@ function Career() {
                               statistical methods and software tools
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -500,12 +503,12 @@ function Career() {
                             </li>
                           </ul>
 
-                          <h1 className=" text-lg font-semibold lg:text-start md:text-start text-center dark:text-white">
+                          <h1 className=" text-lg font-semibold leading-[28px]  lg:text-start md:text-start text-center dark:text-white">
                             Requirements:
                           </h1>
 
-                          <ul className="list-reset space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal  gap-2">
+                          <ul className="list-reset text-black space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -523,7 +526,7 @@ function Career() {
                               or Data Science
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -540,7 +543,7 @@ function Career() {
                               visualization tools such as Tableau or PowerBI
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -557,20 +560,20 @@ function Career() {
                               (EHR) or other healthcare data sources is a plus
                             </li>
                           </ul>
-                          <p className="text-lg  lg:text-start md:text-start text-center">
+                          <p className="text-lg font-medium leading-[28px]   lg:text-start md:text-start text-center">
                             If you are a highly motivated and analytical
                             individual with a passion for improving patient
                             outcomes through data-driven insights, we encourage
                             you to apply for this exciting opportunity.
                           </p>
                         </div>
-                        <div className=" w-full  p-6 space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
+                        <div className=" w-full  p-2 flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
                           <div className="w-auto h-40 flex justify-center items-center    ">
                             <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className="  text-2xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base   font-medium leading-[20px] text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -590,7 +593,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -610,7 +613,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -630,14 +633,14 @@ function Career() {
                             </ul>
                           </div>
 
-                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
+                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-36 md:h-40 h-0.5  lg:mt-5 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
                           <div className="w-auto h-40 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0  ">
                             <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className=" text-2xl  font-bold leading-[32px] font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -657,7 +660,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -677,7 +680,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -705,7 +708,8 @@ function Career() {
               </div>
             </div>
 
-            <div className="  w-11/12   h-full  space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+
+             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -713,8 +717,8 @@ function Career() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
-                    <h1 className=" lg:text-2xl md:text-2xl text-md  font-bold text-black dark:text-white ">
-                      Software Engineer Require
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
+                    Software Engineer Require
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -732,11 +736,11 @@ function Career() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] ">
-                    <div className="w-full h-auto  ">
-                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-20 rounded-2xl   ">
-                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1]  ">
-                          <p className="lg:text-lg md:text-lg text-md font-normal lg:text-start md:text-start text-center">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] rounded-lg ">
+                    <div className="w-full h-auto rounded-lg  ">
+                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-12 rounded-2xl   ">
+                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1] ">
+                          <p className=" leading-[28px] text-lg  font-medium lg:text-start md:text-start text-center">
                             <span className="font-semibold dark:text-white ">
                               Company Overview:{" "}
                             </span>{" "}
@@ -764,7 +768,7 @@ function Career() {
                           </p>
 
                           <ul className="list-reset text-[#3F3F3F]  dark:text-[#959CB1]  space-y-2  text-grey-darker rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal     gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]     gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -781,7 +785,7 @@ function Career() {
                               and prioritize business questions and objectives
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -798,7 +802,7 @@ function Career() {
                               statistical methods and software tools
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -816,12 +820,12 @@ function Career() {
                             </li>
                           </ul>
 
-                          <h1 className=" text-lg font-semibold lg:text-start md:text-start text-center dark:text-white">
+                          <h1 className=" text-lg font-semibold leading-[28px]  lg:text-start md:text-start text-center dark:text-white">
                             Requirements:
                           </h1>
 
-                          <ul className="list-reset space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal  gap-2">
+                          <ul className="list-reset text-black space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -839,7 +843,7 @@ function Career() {
                               or Data Science
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -856,7 +860,7 @@ function Career() {
                               visualization tools such as Tableau or PowerBI
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -873,20 +877,20 @@ function Career() {
                               (EHR) or other healthcare data sources is a plus
                             </li>
                           </ul>
-                          <p className="text-lg  lg:text-start md:text-start text-center">
+                          <p className="text-lg font-medium leading-[28px]   lg:text-start md:text-start text-center">
                             If you are a highly motivated and analytical
                             individual with a passion for improving patient
                             outcomes through data-driven insights, we encourage
                             you to apply for this exciting opportunity.
                           </p>
                         </div>
-                        <div className=" w-full  p-6 space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
+                        <div className=" w-full  p-2 flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
                           <div className="w-auto h-40 flex justify-center items-center    ">
                             <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className="  text-2xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base   font-medium leading-[20px] text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -906,7 +910,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -926,7 +930,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -946,14 +950,14 @@ function Career() {
                             </ul>
                           </div>
 
-                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
+                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-36 md:h-40 h-0.5  lg:mt-5 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
                           <div className="w-auto h-40 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0  ">
                             <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className=" text-2xl  font-bold leading-[32px] font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -973,7 +977,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -993,7 +997,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -1021,7 +1025,8 @@ function Career() {
               </div>
             </div>
 
-            <div className="  w-11/12   h-full  space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+
+             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -1029,8 +1034,8 @@ function Career() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
-                    <h1 className=" lg:text-2xl md:text-2xl text-md  font-bold text-black dark:text-white ">
-                      Financial Analyst Require
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
+                    Financial Analyst Require
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -1048,11 +1053,11 @@ function Career() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] ">
-                    <div className="w-full h-auto  ">
-                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-20 rounded-2xl   ">
-                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1]  ">
-                          <p className="lg:text-lg md:text-lg text-md font-normal lg:text-start md:text-start text-center">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] rounded-lg ">
+                    <div className="w-full h-auto rounded-lg  ">
+                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-12 rounded-2xl   ">
+                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1] ">
+                          <p className=" leading-[28px] text-lg  font-medium lg:text-start md:text-start text-center">
                             <span className="font-semibold dark:text-white ">
                               Company Overview:{" "}
                             </span>{" "}
@@ -1080,7 +1085,7 @@ function Career() {
                           </p>
 
                           <ul className="list-reset text-[#3F3F3F]  dark:text-[#959CB1]  space-y-2  text-grey-darker rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal     gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]     gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1097,7 +1102,7 @@ function Career() {
                               and prioritize business questions and objectives
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1114,7 +1119,7 @@ function Career() {
                               statistical methods and software tools
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1132,12 +1137,12 @@ function Career() {
                             </li>
                           </ul>
 
-                          <h1 className=" text-lg font-semibold lg:text-start md:text-start text-center dark:text-white">
+                          <h1 className=" text-lg font-semibold leading-[28px]  lg:text-start md:text-start text-center dark:text-white">
                             Requirements:
                           </h1>
 
-                          <ul className="list-reset  space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal  gap-2">
+                          <ul className="list-reset text-black space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1155,7 +1160,7 @@ function Career() {
                               or Data Science
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1172,7 +1177,7 @@ function Career() {
                               visualization tools such as Tableau or PowerBI
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1189,20 +1194,20 @@ function Career() {
                               (EHR) or other healthcare data sources is a plus
                             </li>
                           </ul>
-                          <p className="text-lg  lg:text-start md:text-start text-center">
+                          <p className="text-lg font-medium leading-[28px]   lg:text-start md:text-start text-center">
                             If you are a highly motivated and analytical
                             individual with a passion for improving patient
                             outcomes through data-driven insights, we encourage
                             you to apply for this exciting opportunity.
                           </p>
                         </div>
-                        <div className=" w-full  p-6 space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
+                        <div className=" w-full  p-2 flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
                           <div className="w-auto h-40 flex justify-center items-center    ">
                             <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className="  text-2xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base   font-medium leading-[20px] text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1222,7 +1227,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1242,7 +1247,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -1262,14 +1267,14 @@ function Career() {
                             </ul>
                           </div>
 
-                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
+                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-36 md:h-40 h-0.5  lg:mt-5 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
                           <div className="w-auto h-40 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0  ">
                             <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className=" text-2xl  font-bold leading-[32px] font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1289,7 +1294,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1309,7 +1314,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -1337,7 +1342,8 @@ function Career() {
               </div>
             </div>
 
-            <div className="  w-11/12   h-full  space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+
+             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -1345,8 +1351,8 @@ function Career() {
                     className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer  "
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
-                    <h1 className=" lg:text-2xl md:text-2xl text-md  font-bold text-black dark:text-white ">
-                      Content Writer Require
+                    <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
+                    Content Writer Require
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -1364,11 +1370,11 @@ function Career() {
                       />
                     </svg>
                   </div>
-                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] ">
-                    <div className="w-full h-auto  ">
-                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-20 rounded-2xl   ">
-                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1]  ">
-                          <p className="lg:text-lg md:text-lg text-md font-normal lg:text-start md:text-start text-center">
+                  <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full bg-[#F9F9F9] dark:bg-[#042A2F] rounded-lg ">
+                    <div className="w-full h-auto rounded-lg  ">
+                      <div className="  overflow-hidden transition-all duration-500 max-h-auto peer-checked:h-auto  w-full  h-auto p-6 space-y-12 rounded-2xl   ">
+                        <div className="w-full h-auto  space-y-4 text-[#3F3F3F] dark:text-[#959CB1] ">
+                          <p className=" leading-[28px] text-lg  font-medium lg:text-start md:text-start text-center">
                             <span className="font-semibold dark:text-white ">
                               Company Overview:{" "}
                             </span>{" "}
@@ -1396,7 +1402,7 @@ function Career() {
                           </p>
 
                           <ul className="list-reset text-[#3F3F3F]  dark:text-[#959CB1]  space-y-2  text-grey-darker rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal     gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]     gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1413,7 +1419,7 @@ function Career() {
                               and prioritize business questions and objectives
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1430,7 +1436,7 @@ function Career() {
                               statistical methods and software tools
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1448,12 +1454,12 @@ function Career() {
                             </li>
                           </ul>
 
-                          <h1 className=" text-lg font-semibold lg:text-start md:text-start text-center dark:text-white">
+                          <h1 className=" text-lg font-semibold leading-[28px]  lg:text-start md:text-start text-center dark:text-white">
                             Requirements:
                           </h1>
 
-                          <ul className="list-reset  space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
-                            <li className="flex items-center mb-1 text-lg  font-normal  gap-2">
+                          <ul className="list-reset text-black space-y-2  text-[#3F3F3F] dark:text-[#959CB1] rounded ">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]   gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1471,7 +1477,7 @@ function Career() {
                               or Data Science
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1488,7 +1494,7 @@ function Career() {
                               visualization tools such as Tableau or PowerBI
                             </li>
 
-                            <li className="flex items-center mb-1 text-lg  font-normal   gap-2">
+                            <li className="flex items-center mb-1 text-lg  font-medium leading-[28px]    gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
@@ -1505,20 +1511,20 @@ function Career() {
                               (EHR) or other healthcare data sources is a plus
                             </li>
                           </ul>
-                          <p className="text-lg  lg:text-start md:text-start text-center">
+                          <p className="text-lg font-medium leading-[28px]   lg:text-start md:text-start text-center">
                             If you are a highly motivated and analytical
                             individual with a passion for improving patient
                             outcomes through data-driven insights, we encourage
                             you to apply for this exciting opportunity.
                           </p>
                         </div>
-                        <div className=" w-full  p-6 space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
+                        <div className=" w-full  p-2 flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
                           <div className="w-auto h-40 flex justify-center items-center    ">
                             <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className="  text-2xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base   font-medium leading-[20px] text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1538,7 +1544,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1558,7 +1564,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -1578,14 +1584,14 @@ function Career() {
                             </ul>
                           </div>
 
-                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
+                          <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-36 md:h-40 h-0.5  lg:mt-5 md:mt-0 mt-4 flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
                           <div className="w-auto h-40 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0  ">
                             <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                              <h1 className="lg:text-2xl  md:text-md text-md  font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                              <h1 className=" text-2xl  font-bold leading-[32px] font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
                                 Contact Us
                               </h1>
-                              <li className="flex items-center mb-1 text-md font-normal text-[#959CB1]">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1605,7 +1611,7 @@ function Career() {
                                 Address: Juhu, Mumbai 400049
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
@@ -1625,7 +1631,7 @@ function Career() {
                                 Phone: (510) 408-7574
                               </li>
 
-                              <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                              <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 24 24"
@@ -1652,6 +1658,8 @@ function Career() {
                 </div>
               </div>
             </div>
+            
+
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import React from 'react'
 import Client from "../components/ClientPageComponent/Client"
 
 
+import Footer from "../components/HomePageComponents/Footer/Footer"
 
 function ArticlePage() {
   return (
@@ -11,6 +12,7 @@ function ArticlePage() {
 
 <Client></Client>
 
+<Footer></Footer>
     </>
     
   )

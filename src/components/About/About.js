@@ -20,25 +20,25 @@ function Choose() {
       </div>
       <div className="container w-full  px-6 py-12 mx-auto ">
         <div className="flex flex-wrap w-full  mb-8 flex-col ">
-          <h1 className=" text-sm font-medium font-bold title-font mb-2 text-[#959CB1] dark:text-[#959CB1]">
+          <h1 className=" text-base leading-[24px] font-medium mb-2 text-[#959CB1] dark:text-[#959CB1]">
             Home{" > "}
-            <span className="text-sm font-medium font-bold title-font mb-2 text-black dark:text-white">
+            <span className=" text-base leading-[24px] font-medium  mb-2 text-black dark:text-white">
               {" "}
                About
             </span>
           </h1>
-          <h1 className="sm:text-3xl text-2xl lg:text-start md:text-start text-center font-medium font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
+          <h1 className=" xl:text-[45px] text-4xl leading-[56px] font-bold lg:text-start md:text-start text-center  mb-2 text-[#4B4B4B] dark:text-white">
             About
           </h1>
-          <p className="lg:w-1/2  lg:text-start md:text-start text-center leading-relaxed text-[#515151] dark:text-[#959CB1]  mt-4 ">
+          <p className="xl:w-[550px] w-full  lg:text-start md:text-start text-center text-lg font-normal leading-[29px]  text-[#515151] dark:text-[#959CB1]  mt-2 ">
             There are many variations of passages of Lorem Ipsum available but
             the majority have suffered alteration in some form.
           </p>
         </div>
 
         <div className="flex  justify-center relative z-20 mb-8  ">
-          <div className=" flex flex-wrap  w-11/12  py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7] dark:bg-[#00343C] border border-[#E7E7E7] dark:border-[#08616CF7]">
-            <div className="  w-11/12  h-auto p-6 space-y-20 rounded-2xl bg-white dark:bg-[#042A2F]  ">
+          <div className=" flex flex-wrap  xl:w-[1135px] lg:w-[950px] md:w-[700px] w-full py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7] dark:bg-[#00343C] border border-[#E7E7E7] dark:border-[#08616CF7]">
+            <div className="  xl:w-[1071px] lg:w-[900px] md:w-[650px] w-[300px] h-auto p-[32px] space-y-[40px] rounded-2xl bg-white dark:bg-[#042A2F]  ">
               <div className=" w-full h-12 flex justify-center mt-2   ">
                 <img
                   alt="gallery"
@@ -47,9 +47,9 @@ function Choose() {
                 />
               </div>
             
-              <div>
-              <h1 className="lg:text-2xl  md:text-md text-md font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">About Us</h1>
-                <p className="lg:text-xl md:text-md text-md font-normal lg:text-start md:text-start text-center text-black dark:text-[#B5B5B5]">
+              <div className="w-full p-4">
+              <h1 className=" xl:text-2xl g:text-2xl text-xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">About Us</h1>
+                <p className="xl:text-lg lg:text-lg md:text-md text-md font-normal leading-[28px] lg:text-start md:text-start text-center text-black dark:text-[#B5B5B5]">
                   Guddge is a professional services company specialized in
                   delivering Information Management, and Business Intelligence
                   solutions for corporate and government agencies. <br></br>
@@ -66,12 +66,12 @@ function Choose() {
               </div>
             </div>
 
-            <div className=" w-11/12  p-6 flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
-              <div className="w-auto h-40  flex justify-center items-center  ">
+            <div className=" xl:w-[1071px] lg:w-[900px] md:w-[650px] w-[300px] p-[32px] flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
+              <div className="w-auto h-40 p-4  flex justify-center items-center  ">
                 <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-              <h1 className="lg:text-2xl  md:text-md text-md font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">Contact Us</h1>
+              <h1 className="xl:text-2xl lg:text-2xl  text-xl font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">Contact Us</h1>
 
-                  <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                  <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -91,7 +91,7 @@ function Choose() {
                     Address: Juhu, Mumbai 400049
                   </li>
 
-                  <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1]">
+                  <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -111,7 +111,7 @@ function Choose() {
                     Phone: (510) 408-7574
                   </li>
 
-                  <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                  <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -131,13 +131,13 @@ function Choose() {
                 </ul>
               </div>
 
-              <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-4  flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
+              <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-10 lg:mb-0 md:mb-0 mb-8  flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
-              <div className="w-auto h-40 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0    ">
+              <div className="w-auto h-40 p-4 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0    ">
               
                 <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                <h1 className="lg:text-2xl  md:text-md text-md font-normal font-semibold lg:text-start md:text-start text-center mb-4 text-black dark:text-white">Contact Us</h1>
-                  <li className="flex items-center mb-1 text-md font-normal text-[#959CB1] ">
+                <h1 className="xl:text-2xl lg:text-2xl  text-xl font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">Contact Us</h1>
+                  <li className="flex items-center mb-1 text-base font-medium leading-[20px] text-[#959CB1] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -157,7 +157,7 @@ function Choose() {
                     Address: Juhu, Mumbai 400049
                   </li>
 
-                  <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                  <li className="flex items-center mb-1 ttext-base font-medium leading-[20px]  text-[#959CB1] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -177,7 +177,7 @@ function Choose() {
                     Phone: (510) 408-7574
                   </li>
 
-                  <li className="flex items-center mb-1 text-sm font-normal text-[#959CB1] ">
+                  <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"

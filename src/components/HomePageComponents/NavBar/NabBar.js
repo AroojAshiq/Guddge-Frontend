@@ -11,18 +11,22 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
   return (
     <>
       <div
-        className={`  sticky top-0  z-50 ${
+        className={`  sticky top-0 w-[100%] xl:h-[80px] lg:h-[80px] md:h-[60px] h-[62px] lg:px-[72px] md:px-[45px] lg:pt-[32px] md:pt-[16px] lg:pb-[13px]  md:pb-[2px] px-5 pt-6 pb-7 z-50 ${
           darkMode ? "bg-[#595959]" : "bg-[#0E292D]"
         }  `}
       >
-        <div className="max-w-7xl mx-auto px-5   ">
-          <div className="flex   justify-between items-center  py-4 md:justify-start  gap-4">
-            <div className="flex justify-start lg:w-1/2  lg:flex-1  ">
+        <div className=" mx-auto h-full ">
+          <div className="flex h-full justify-between justify-items-center ">
+            <div className="flex justify-start items-center lg:w-1/2 md:w-[200px]  lg:flex-1   ">
               <Link to="/">
-                <img className="h-8 w-auto sm:h-10" src="./logo.svg" alt="" />
+                <img
+                  className="xl:h-12 lg:h-10 md:h-8 h-9 w-auto "
+                  src="./logo.svg"
+                  alt=""
+                />
               </Link>
             </div>
-            <div className="-mr-2 -my-2 md:hidden">
+            <div className="-mr-2 -my-3 md:hidden">
               <button
                 type="button"
                 className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -48,30 +52,30 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
               </button>
             </div>
 
-            <nav className="hidden md:flex gap-7   lg:w-3/4 md:w-[680px]  lg:flex justify-end   ">
+            <nav className="hidden md:flex xl:gap-12 lg:gap-10 md:gap-6 h-full  lg:w-[70%] md:w-[50%]  flex justify-end items-center ">
               <Link
                 to="/"
-                className="text-base font-medium dark:text-white  text-white "
+                className="xl:text-base md:text-sm font-normal font-inter dark:text-white  text-white "
               >
                 Home
               </Link>
 
               <Link
                 to="/about"
-                className="text-base font-medium text-white hover:text-gray-900"
+                className="xl:text-base md:text-sm font-normal font-inter font-medium text-white hover:text-white"
               >
                 About
               </Link>
 
               <Link
                 to="/services"
-                className="text-base font-medium text-white hover:text-gray-900"
+                className="xl:text-base md:text-sm font-normal font-inter text-white hover:text-white"
               >
                 Services
               </Link>
               <Link
                 to="/client"
-                className="text-base font-medium text-white hover:text-gray-900"
+                className="xl:text-base md:text-sm font-normal font-inter text-white hover:text-white"
               >
                 Client
               </Link>
@@ -79,7 +83,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                 <button
                   type="button"
                   className="
-                   group  rounded-md text-white inline-flex items-center text-base font-medium hover:text-gray-900  pb-8'
+                   group  rounded-md text-white inline-flex items-center xl:text-base md:text-sm font-normal font-inter hover:text-white  pb-8'
                   "
                   onClick={() => {
                     setFlyer(!flyer);
@@ -91,8 +95,8 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                   <svg
                     className={
                       flyer === true
-                        ? "transform rotate-180 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 transition ease-out duration-200"
-                        : "transform rotate-0 transition ease-out duration-200 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                        ? "transform rotate-180 ml-2 h-5 w-5 text-white group-hover:white transition ease-out duration-200"
+                        : "transform rotate-0 transition ease-out duration-200 ml-2 h-5 w-5 text-white group-hover:text-white"
                     }
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -121,7 +125,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                         to="/portfolio"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
-                        <div className="ml-4 ">
+                        <div className="ml-4 xl:text-base md:text-sm font-normal font-inter">
                           <h1>Portfolio</h1>
                         </div>
                       </Link>
@@ -131,7 +135,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                       >
                         {/* Heroicon name: outline/cursor-click */}
 
-                        <div className="ml-4">
+                        <div className="ml-4 xl:text-base md:text-sm font-normal font-inter">
                           <h1>Articles</h1>
                         </div>
                       </Link>
@@ -142,7 +146,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                       >
                         {/* Heroicon name: outline/cursor-click */}
 
-                        <div className="ml-4">
+                        <div className="ml-4 xl:text-base md:text-sm font-normal font-inter">
                           <h1>Team Members</h1>
                         </div>
                       </Link>
@@ -153,7 +157,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                       >
                         {/* Heroicon name: outline/cursor-click */}
 
-                        <div className="ml-4">
+                        <div className="ml-4 xl:text-base md:text-sm font-normal font-inter">
                           <h1>Career</h1>
                         </div>
                       </Link>
@@ -164,13 +168,13 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
 
               <Link
                 to="/contact"
-                className="text-base font-medium text-white hover:text-gray-900"
+                className="xl:text-base md:text-sm font-normal font-inter text-white hover:text-white"
               >
                 Contact
               </Link>
               <Link
                 to="/timesheet"
-                className="text-base font-medium text-white hover:text-gray-900"
+                className="xl:text-base md:text-sm font-normal font-inter text-white hover:text-gray-900"
               >
                 TimeSheet
               </Link>
