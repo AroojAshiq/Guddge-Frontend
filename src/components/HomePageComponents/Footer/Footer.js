@@ -189,7 +189,7 @@ function Footer() {
           {" "}
           Copyright © 2023{" "}
           <Link to="/" className="hover:underline">
-            Techorphic™
+            Guddge™
           </Link>
           . All Rights Reserved.
         </span>
