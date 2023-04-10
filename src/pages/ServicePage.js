@@ -1,19 +1,12 @@
-import React from 'react'
-
-import Service from "../components/ServicePageComponent/Service"
-
-import Footer from "../components/HomePageComponents/Footer/Footer"
+import React from "react";
+import Service from "../components/ServicePageComponent/Service";
 
 function ServicePage() {
   return (
     <>
-
-<Service></Service>
-
-<Footer></Footer>
+      <Service></Service>
     </>
-    
-  )
+  );
 }
 
-export default ServicePage
+export default ServicePage;

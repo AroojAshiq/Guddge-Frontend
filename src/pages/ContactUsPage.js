@@ -1,7 +1,6 @@
 import React from 'react'
 
 import ContactUs from "../components/ContactUs/ContactUs"
-import Footer from "../components/HomePageComponents/Footer/Footer"
 
 function ContactUsPage() {
   return (
@@ -9,7 +8,6 @@ function ContactUsPage() {
 
 <ContactUs></ContactUs>
 
-<Footer></Footer>
     </>
     
   )
