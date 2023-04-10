@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 function Footer() {
   return (
     <div>
@@ -100,7 +98,7 @@ function Footer() {
               <ul className=" text-base font-medium leading-[24px] text-gray-300 space-y-4">
                 <li className="">
                   <Link to="/" className="hover:underline">
-                    Site Street Xyz ,Sanfrancico xauausauau{" "}
+                    Site Street Xyz ,Sanfrancico xauausauau
                   </Link>
                 </li>
                 <li>
@@ -211,7 +209,7 @@ function Footer() {
           {" "}
           Copyright © 2023{" "}
           <Link to="/" className="hover:underline">
-            Techorphic™
+            Guddge™
           </Link>
           . All Rights Reserved.
         </span>
