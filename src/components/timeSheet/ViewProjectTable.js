@@ -40,13 +40,15 @@ export default function ViewProjectTable() {
                           scope="col"
                           className="px-6 py-4 whitespace-nowrap font-semibold text-sm text-[#104083]"
                         >
-                          PROJECT
+                          PROJECT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp;
                         </th>
                         <th
                           scope="col"
                           className="px-6 py-4 whitespace-nowrap font-semibold text-sm text-[#104083]"
                         >
                           TASK
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </th>
                         <th
                           scope="col"
@@ -61,24 +63,42 @@ export default function ViewProjectTable() {
                       <tr className="border-b dark:border-neutral-500">
                         <td
                           width="20%"
-                          className="whitespace-nowrap text-center px-6 py-4"
+                          className="whitespace-nowrap text-center "
                         >
-                          12-06-2021
+                          <input
+                            className="h-full border-none outline-none w-full px-6 py-4"
+                            placeholder="12-06-2021"
+                          />
                         </td>
-                        <td className="whitespace-nowrap text-center px-6 py-4">
-                          126106
+                        <td className="whitespace-nowrap text-center ">
+                          <input
+                            className="h-full border-none outline-none w-full px-6 py-4"
+                            placeholder="126106"
+                          />
                         </td>
-                        <td className="whitespace-nowrap text-center px-6 py-4">
-                          DFAS
+                        <td className="whitespace-nowrap text-center ">
+                          <input
+                            className="h-full border-none outline-none w-full px-6 py-4"
+                            placeholder="DFAS"
+                          />
                         </td>
-                        <td className="whitespace-nowrap text-center px-6 py-4">
-                          Data Foundation
+                        <td className="whitespace-nowrap text-center ">
+                          <input
+                            className="h-full border-none outline-none w-full px-6 py-4"
+                            placeholder="Data Foundation"
+                          />
                         </td>
-                        <td className="whitespace-nowrap text-center px-6 py-4">
-                          Added a new View
+                        <td className="whitespace-nowrap text-center ">
+                          <input
+                            className="h-full border-none outline-none w-full px-6 py-4"
+                            placeholder="Added a new View"
+                          />
                         </td>
-                        <td className="whitespace-nowrap text-center px-6 py-4">
-                          Include October hours
+                        <td className="whitespace-nowrap text-center">
+                          <input
+                            className="h-full border-none outline-none w-full px-6 py-4"
+                            placeholder="Include October hours"
+                          />
                         </td>
                       </tr>
                     </tbody>
@@ -107,7 +127,7 @@ export default function ViewProjectTable() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <div>
           <hr className="w-full pb-5" />
 
@@ -208,9 +228,9 @@ export default function ViewProjectTable() {
             <p className="text-xs">Share with Contractor</p>
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <div>
+      {/* <div>
         <div>
           <hr className="w-full pb-5" />
 
@@ -310,7 +330,7 @@ export default function ViewProjectTable() {
             <p className="text-xs">Share with Contractor</p>
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

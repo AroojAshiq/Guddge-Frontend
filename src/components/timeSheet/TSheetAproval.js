@@ -65,7 +65,7 @@ export default function TSheetAproval() {
                   <h1 className="text-[17px] font-bold">
                     James Smith Home Project Time sheet
                   </h1>
-                  <Link to="/dashboard/viewtimesheets">
+                  <Link to="/dashboard/view-time-sheets">
                     <button className="flex outline-none lg:mt-0 md:mt-0 mt-4 h-[44px] w-[136px] justify-center rounded-lg text-[17px] font-medium items-center gap-x-2 bg-black text-white">
                       <p>Open</p>
                       <ArrowRight />

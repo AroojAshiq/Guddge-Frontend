@@ -1,32 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import {
+  Footer1,
+  Footer2,
+  Footer3,
+  FooterIcon1,
+  FooterIcon2,
+  FooterIcon3,
+  FooterIcon4,
+} from "../../iconComponent/Icon";
 function Footer() {
   return (
     <div>
-      <footer className="w-full p-12 bg-[#595959] dark:bg-[#022125] relative z-0 ">
-        <div className=" lg:w-44  lg:h-40 md:w-44 md:w-40 w-32 h-32 absolute  xl:left-[1095px] xl:top-40 lg:left-[800px] lg:top-[160px] md:left-[570px] md:top-[390px]  left-[230px] top-28  z-10  ">
-          <img
-            alt="gallery"
-            className=" object-cover h-full  object-center block"
-            src="./footer-1.svg"
-          />
+      <footer className="w-full p-12 bg-[#595959] dark:bg-[#022125] relative z-0 overflow-hidden ">
+        <div className="  lg:w-44  lg:h-40 md:w-44 md:w-40 w-32 h-32 absolute  xl:left-[1095px] xl:top-36 lg:left-[800px] lg:top-[150px] md:left-[570px] md:top-[350px]  left-[230px] top-28  z-10  ">
+          <Footer1 />
         </div>
 
-        <div className=" lg:w-96  lg:h-40 md:w-80 md:h-36 w-64 h-28 absolute xl:left-[400px] xl:top-40  lg:left-[350px] lg:top-[160px] md:left-[200px] md:top-[370px] left-[110px] top-[860px]  z-10 ">
-          <img
-            alt="gallery"
-            className=" object-cover h-full  object-center block"
-            src="./footer-3.svg"
-          />
+        <div className=" lg:w-96  lg:h-36 md:w-80 md:h-36 w-64 h-28 absolute xl:left-[400px] xl:top-20  lg:left-[320px] lg:top-[100px] md:left-[180px] md:top-[340px] left-[110px] top-[800px]  z-10 ">
+          <Footer3 />
         </div>
 
-        <div className=" w-16 xl:top-[200px] -left-[0.5px] lg:top-[200px] md:top-[410px] top-[880px] absolute  z-10 ">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full object-center block  "
-            src="./footer-2.svg"
-          />
+        <div className=" w-16 xl:top-[180px] -left-[0.5px] lg:top-[180px] md:top-[400px] top-[880px] absolute  z-10">
+          <Footer2 />
         </div>
 
         <div className="w-full h-auto relative z-20  ">
@@ -52,41 +48,25 @@ function Footer() {
                   to="/"
                   className="text-gray-500 hover:text-gray-900 hover:text-white"
                 >
-                  <img
-                    alt="gallery"
-                    className="w-full object-cover h-full  object-center block  "
-                    src="./facebook.svg"
-                  />
+                  <FooterIcon1 />
                 </Link>
                 <Link
                   to="/"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
-                  <img
-                    alt="gallery"
-                    className="w-full object-cover h-full  object-center block  "
-                    src="./tw.svg"
-                  />
+                  <FooterIcon2 />
                 </Link>
                 <Link
                   to="/"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
-                  <img
-                    alt="gallery"
-                    className="w-full object-cover h-full  object-center block  "
-                    src="./yt.svg"
-                  />
+                  <FooterIcon3 />
                 </Link>
                 <Link
                   to="/"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
-                  <img
-                    alt="gallery"
-                    className="w-full object-cover h-full  object-center block  "
-                    src="./I2.svg"
-                  />
+                  <FooterIcon4 />
                 </Link>
               </div>
             </div>
@@ -98,7 +78,7 @@ function Footer() {
               <ul className=" text-base font-medium leading-[24px] text-gray-300 space-y-4">
                 <li className="">
                   <Link to="/" className="hover:underline">
-                    Site Street Xyz ,Sanfrancico xauausauau
+                    Site Street Xyz ,Sanfrancico xauausauau{" "}
                   </Link>
                 </li>
                 <li>
@@ -209,7 +189,7 @@ function Footer() {
           {" "}
           Copyright © 2023{" "}
           <Link to="/" className="hover:underline">
-            Guddge™
+            Techorphic™
           </Link>
           . All Rights Reserved.
         </span>
