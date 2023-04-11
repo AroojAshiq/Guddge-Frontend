@@ -29,17 +29,17 @@ export default function TimeViewSheets() {
             <p>Filter Applied</p>
             <FilterIcon />
           </button>
-          <div class="flex w-full flex-wrap justify-center">
+          <div className="flex w-full flex-wrap justify-center">
             <div
               data-te-chip-init
               data-te-ripple-init
-              class="[word-wrap: break-word] text-white my-[5px] bg-black mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px]  py-0 px-[12px] text-xs font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear "
+              className="[word-wrap: break-word] text-white my-[5px] bg-black mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px]  py-0 px-[12px] text-xs font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear "
               data-te-ripple-color="dark"
             >
               Millan contractor
               <span
                 data-te-chip-close
-                class="float-right w-4 cursor-pointer  text-base text-white opacity-[.53] transition-all duration-200 ease-in-out "
+                className="float-right w-4 cursor-pointer  text-base text-white opacity-[.53] transition-all duration-200 ease-in-out "
               >
                 <CancelIcon height={20} width={20} />
               </span>
@@ -48,13 +48,13 @@ export default function TimeViewSheets() {
             <div
               data-te-chip-init
               data-te-ripple-init
-              class="[word-wrap: break-word] text-white my-[5px] bg-black mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px]  py-0 px-[12px] text-xs font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear "
+              className="[word-wrap: break-word] text-white my-[5px] bg-black mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px]  py-0 px-[12px] text-xs font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear "
               data-te-ripple-color="dark"
             >
               12-Mar-2021 to 26-Jun-2021
               <span
                 data-te-chip-close
-                class="float-right w-4 cursor-pointer  text-base text-white opacity-[.53] transition-all duration-200 ease-in-out "
+                className="float-right w-4 cursor-pointer  text-base text-white opacity-[.53] transition-all duration-200 ease-in-out "
               >
                 <CancelIcon height={20} width={20} />
               </span>
@@ -63,13 +63,13 @@ export default function TimeViewSheets() {
             <div
               data-te-chip-init
               data-te-ripple-init
-              class="[word-wrap: break-word] text-white my-[5px] bg-black mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px]  py-0 px-[12px] text-xs font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear "
+              className="[word-wrap: break-word] text-white my-[5px] bg-black mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px]  py-0 px-[12px] text-xs font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear "
               data-te-ripple-color="dark"
             >
               Data Foundations
               <span
                 data-te-chip-close
-                class="float-right w-4 cursor-pointer  text-base text-white opacity-[.53] transition-all duration-200 ease-in-out "
+                className="float-right w-4 cursor-pointer  text-base text-white opacity-[.53] transition-all duration-200 ease-in-out "
               >
                 <CancelIcon height={20} width={20} />
               </span>

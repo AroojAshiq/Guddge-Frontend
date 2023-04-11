@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import { DotsVerticalIcon } from "@heroicons/react/outline";
-// import { Menu, Transition } from "@headlessui/react";
 import {
   ArrowSmallLeftIcon,
   ArrowSmallRightIcon,

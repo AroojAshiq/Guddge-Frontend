@@ -186,8 +186,7 @@ function Footer() {
       </footer>
       <div className=" w-full h-12 flex items-center bg-[#ABB3B6] justify-center ">
         <span className="text-sm  sm:text-center text-black">
-          {" "}
-          Copyright © 2023{" "}
+          Copyright © 2023
           <Link to="/" className="hover:underline">
             Guddge™
           </Link>

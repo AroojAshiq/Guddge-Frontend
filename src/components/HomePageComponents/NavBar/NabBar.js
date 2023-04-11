@@ -11,7 +11,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
   return (
     <>
       <div
-        className={`  sticky top-0 w-[100%] xl:h-[80px] lg:h-[80px] md:h-[60px] h-[62px] lg:px-[72px] md:px-[45px] lg:pt-[32px] md:pt-[16px] lg:pb-[13px]  md:pb-[2px] px-5 pt-6 pb-7 z-50 ${
+        className={`  sticky top-0 w-[100%] xl:h-[80px] lg:h-[80px] md:h-[60px] h-[62px] lg:px-[64px] md:px-[45px] lg:pt-[32px] md:pt-[16px] lg:pb-[13px]  md:pb-[2px] px-5 pt-6 pb-7 z-50 ${
           darkMode ? "bg-[#595959]" : "bg-[#0E292D]"
         }  `}
       >
@@ -116,14 +116,14 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                   className={
                     flyer
                       ? " opacity-100 translate-y-0 transition ease-out duration-200 absolute z-10 -ml-4 mt-3 transform px-2 w-60 max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
-                      : " opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-full max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                      : " opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-full max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 hidden"
                   }
                 >
-                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div className="relative grid gap-6 bg-white px-5 py-5 sm:gap-8 sm:p-8">
+                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden ">
+                    <div className="relative grid gap-6 bg-white px-5 py-5 sm:gap-8 sm:p-8 bg-white dark:bg-[#04505B] text-black dark:text-white">
                       <Link
                         to="/portfolio"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        className="-m-3 p-3 flex items-start rounded-lg "
                       >
                         <div className="ml-4 xl:text-base md:text-sm font-normal font-inter">
                           <h1>Portfolio</h1>
@@ -131,7 +131,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                       </Link>
                       <Link
                         to="/article"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        className="-m-3 p-3 flex items-start rounded-lg "
                       >
                         {/* Heroicon name: outline/cursor-click */}
 
@@ -142,7 +142,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
 
                       <Link
                         to="/team-members"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        className="-m-3 p-3 flex items-start rounded-lg "
                       >
                         {/* Heroicon name: outline/cursor-click */}
 
@@ -153,7 +153,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
 
                       <Link
                         to="/career"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        className="-m-3 p-3 flex items-start rounded-lg "
                       >
                         {/* Heroicon name: outline/cursor-click */}
 
@@ -173,7 +173,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                 Contact
               </Link>
               <Link
-                to="/timesheet"
+                to="/"
                 className="xl:text-base md:text-sm font-normal font-inter text-white hover:text-gray-900"
               >
                 TimeSheet
@@ -205,7 +205,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
         <div
           className={
             open
-              ? "opacity-100 scale-100 ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
               : "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden hidden"
           }
         >
@@ -458,7 +458,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                   </Link>
 
                   <Link
-                    to="/timesheet"
+                    to="/"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-[#04505B]"
                   >
                     <svg
