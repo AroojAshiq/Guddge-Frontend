@@ -1,44 +1,80 @@
 import React, { useState } from "react";
 import { AddIcon, ExcelLogo, ShareIcon } from "../iconComponent/Icon";
 import { Formik, Field, Form, FieldArray } from "formik";
-import { getDaysInMonth, getYear, getDate, getMonth } from "date-fns";
+import { getDaysInMonth, getYear, getMonth, format } from "date-fns";
+import { timeSheetData } from "../../Api";
+import Swal from "sweetalert2";
 
 export default function ViewProjectTable() {
+  const [table, setTable] = useState(false);
   const [isCliked, setIsClicked] = useState(false);
   let days = getDaysInMonth(new Date());
+
   const hanldePush = (push, dataSheet) => {
+    setTable(true);
     for (let i = 0; i < days; i++) {
-      push({
-        changeDate: `${getDate(new Date())}-${getMonth(new Date())}-${getYear(
-          new Date()
-        )}`,
-        ID: "",
-        invoiceCategory: "",
-        project: "",
-        task: "",
-        comments: "",
-      });
+      let year = getYear(new Date());
+      let month = getMonth(new Date());
+
+      let val = format(new Date(year, month, i + 1), "dd/MM/yyyy");
+      let weekDay = format(new Date(year, month, i + 1), "eeee");
+
+      if (weekDay !== "Saturday" && weekDay !== "Sunday") {
+        push({
+          changeDate: `${val}`,
+          ID: "",
+          invoiceCategory: "",
+          project: "",
+          task: "",
+          comments: "",
+        });
+      } else {
+        push({
+          changeDate: `${val}`,
+          ID: "N/A",
+          invoiceCategory: "N/A",
+          project: "N/A",
+          task: "N/A",
+          comments: "N/A",
+        });
+      }
     }
   };
   return (
     <>
       <Formik
         initialValues={{
-          dataSheet: [
-            {
-              changeDate: `${getDate(new Date())}-${getMonth(
-                new Date()
-              )}-${getYear(new Date())}`,
-              ID: "",
-              invoiceCategory: "",
-              project: "",
-              task: "",
-              comments: "",
-            },
-          ],
+          dataSheet: [],
         }}
         onSubmit={async (values) => {
-          console.log(values);
+          // console.log(values);
+          try {
+            const res = await timeSheetData(values);
+            console.log(res, "res");
+            if (res?.data?.success) {
+              Swal.fire({
+                width: "20em",
+                height: "20em",
+                position: "top-end",
+                icon: "success",
+                title: `${res?.data?.message}`,
+                showConfirmButton: false,
+                timer: 1500,
+              });
+            }
+          } catch (error) {
+            Swal.fire({
+              width: "20em",
+              height: "20em",
+              title: `${error?.data?.message}`,
+              showClass: {
+                popup: "animate__animated animate__fadeInDown",
+              },
+              hideClass: {
+                popup: "animate__animated animate__fadeOutUp",
+              },
+            });
+          }
         }}
       >
         {({ isSubmitting, errors, touched, values }) => (
@@ -103,59 +139,61 @@ export default function ViewProjectTable() {
                               {values?.dataSheet?.length > 0 &&
                                 values?.dataSheet?.map((dataSheet, index) => (
                                   <tbody key={index} className="w-full">
-                                    <>
-                                      <tr className="border-b dark:border-neutral-500">
-                                        <td
-                                          width="20%"
-                                          className="whitespace-nowrap text-center "
-                                        >
-                                          <Field
-                                            name={`dataSheet.${index}.changeDate`}
-                                            value={
-                                              values?.dataSheet?.[index]
-                                                ?.changeDate
-                                            }
-                                            className="h-full border-none outline-none w-full px-6 py-4"
-                                            placeholder="12-06-2021"
-                                          />
-                                        </td>
-                                        <td className="whitespace-nowrap text-center ">
-                                          <Field
-                                            name={`dataSheet.${index}.ID`}
-                                            className="h-full border-none outline-none w-full px-6 py-4"
-                                            placeholder="126106"
-                                          />
-                                        </td>
-                                        <td className="whitespace-nowrap text-center ">
-                                          <Field
-                                            name={`dataSheet.${index}.invoiceCategory`}
-                                            className="h-full border-none outline-none w-full px-6 py-4"
-                                            placeholder="DFAS"
-                                          />
-                                        </td>
-                                        <td className="whitespace-nowrap text-center ">
-                                          <Field
-                                            name={`dataSheet.${index}.project`}
-                                            className="h-full border-none outline-none w-full px-6 py-4"
-                                            placeholder="Data Foundation"
-                                          />
-                                        </td>
-                                        <td className="whitespace-nowrap text-center ">
-                                          <Field
-                                            name={`dataSheet.${index}.task`}
-                                            className="h-full border-none outline-none w-full px-6 py-4"
-                                            placeholder="Added a new View"
-                                          />
-                                        </td>
-                                        <td className="whitespace-nowrap text-center">
-                                          <Field
-                                            name={`dataSheet.${index}.comments`}
-                                            className="h-full border-none outline-none w-full px-6 py-4"
-                                            placeholder="Include October hours"
-                                          />
-                                        </td>
-                                      </tr>
-                                    </>
+                                    {table ? (
+                                      <>
+                                        <tr className="border-b dark:border-neutral-500">
+                                          <td
+                                            width="20%"
+                                            className="whitespace-nowrap text-center "
+                                          >
+                                            <Field
+                                              name={`dataSheet.${index}.changeDate`}
+                                              value={
+                                                values?.dataSheet?.[index]
+                                                  ?.changeDate
+                                              }
+                                              className="h-full border-none outline-none w-full px-6 py-4"
+                                              placeholder="12-06-2021"
+                                            />
+                                          </td>
+                                          <td className="whitespace-nowrap text-center ">
+                                            <Field
+                                              name={`dataSheet.${index}.ID`}
+                                              className="h-full border-none outline-none w-full px-6 py-4"
+                                              placeholder="126106"
+                                            />
+                                          </td>
+                                          <td className="whitespace-nowrap text-center ">
+                                            <Field
+                                              name={`dataSheet.${index}.invoiceCategory`}
+                                              className="h-full border-none outline-none w-full px-6 py-4"
+                                              placeholder="DFAS"
+                                            />
+                                          </td>
+                                          <td className="whitespace-nowrap text-center ">
+                                            <Field
+                                              name={`dataSheet.${index}.project`}
+                                              className="h-full border-none outline-none w-full px-6 py-4"
+                                              placeholder="Data Foundation"
+                                            />
+                                          </td>
+                                          <td className="whitespace-nowrap text-center ">
+                                            <Field
+                                              name={`dataSheet.${index}.task`}
+                                              className="h-full border-none outline-none w-full px-6 py-4"
+                                              placeholder="Added a new View"
+                                            />
+                                          </td>
+                                          <td className="whitespace-nowrap text-center">
+                                            <Field
+                                              name={`dataSheet.${index}.comments`}
+                                              className="h-full border-none outline-none w-full px-6 py-4"
+                                              placeholder="Include October hours"
+                                            />
+                                          </td>
+                                        </tr>
+                                      </>
+                                    ) : null}
                                   </tbody>
                                 ))}
                             </table>

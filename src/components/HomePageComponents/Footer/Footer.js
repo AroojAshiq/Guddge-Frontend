@@ -31,9 +31,9 @@ function Footer() {
               <div className="  mb-6 md:mb-2">
                 <Link to="/" className="flex items-center">
                   <img
-                    src="./logo.svg"
+                    src="../logo.svg"
                     className="h-10 mr-3 "
-                    alt="FlowBite Logo"
+                    alt="Guddge Logo"
                   />
                 </Link>
               </div>

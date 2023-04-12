@@ -85,8 +85,24 @@ export const userContractor = async (data) => {
 
 export const userClient = async (data) => {
   try {
-    // console.log(data, "data");
     const res = await axios.post(`/dashboard/clients`, data);
+    return res;
+  } catch (error) {
+    Swal.fire({
+      width: "20em",
+      height: "20em",
+      position: "top-end",
+      icon: "error",
+      title: "Oops...",
+      text: ` ${error?.response?.data?.message}`,
+    });
+    return error;
+  }
+};
+
+export const timeSheetData = async (data) => {
+  try {
+    const res = await axios.post(`/dashboard/view-time-sheets`, data);
     return res;
   } catch (error) {
     Swal.fire({
