@@ -9,7 +9,7 @@ export default function TimeViewSheets() {
     <>
       <div className="lg:w-full md:w-[750px] w-full">
         <div className=" flex lg:items-start md:items-start lg:justify-start lg:flex-row md:justify-start md:flex-row flex-col justify-center items-center my-2">
-          <Link to="/dashboard/projects">
+          <Link to="/dashboard/timesheets">
             <div className="w-[44px] self-start h-[44px] hover:bg-[#F0FAFC] flex items-center justify-center rounded lg:mt-0">
               <img src={angle} alt="back" />
             </div>

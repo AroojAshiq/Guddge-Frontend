@@ -54,15 +54,15 @@ export default function TSheetAproved() {
     // },
   ];
   return (
-    <div className="h-screen  overflow-y-auto px-4">
+    <div className="h-screen px-4">
       {data?.map((obj, i) => (
         <div key={obj?.id} className="py-3 ">
           <hr className="mb-6 " />
           <div className="rounded-md border  pb-3">
             <div className="lg:flex md:flex flex-col justify-between block  ">
               <div className="w-full bg-[#EEFDFF] border-b lg:h-[68px] md:h-[68px] h-auto lg:py-0 md:py-0 py-3">
-                <div className="w-[98%] h-full mx-auto flex justify-between items-center">
-                  <h1 className="text-[17px] font-bold">
+                <div className="w-[98%] h-full mx-auto  flex lg:flex-row md:flex-row flex-col  justify-between items-center">
+                  <h1 className="text-[17px] font-bold sm:text-center text-center">
                     James Smith Home Project Time sheet
                   </h1>
                   <Link to="/dashboard/view-time-sheets">
@@ -77,43 +77,46 @@ export default function TSheetAproved() {
                 <div className="flex flex-col">
                   <div className=" sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                      <div className="overflow-hidden">
-                        <table className="min-w-full text-left text-sm font-light">
-                          <tbody>
-                            <tr>
-                              <td className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6 py-2">
-                                Client Name
-                              </td>
-                              <td className="whitespace-nowrap text-center font-normal text-xs text-[#808080] px-6 py-2">
-                                Approval Date
-                              </td>
-                              <td className="whitespace-nowrap text-center font-normal text-xs text-[#808080] px-6 py-2">
-                                Approved By
-                              </td>
-                              <td className="whitespace-nowrap text-end font-normal text-xs text-[#808080] px-6 py-2">
-                                Status
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="whitespace-nowrap font-normal text-xs text-[#808080] px-6 pb-2">
-                                James Smith
-                              </td>
-                              <td className="whitespace-nowrap text-center font-normal text-xs text-[#007A8B] px-6 pb-2">
-                                <i>Waiting</i>
-                              </td>
-                              <td className="whitespace-nowrap font-normal text-center text-xs text-[#808080] px-6 pb-2">
-                                Not yet
-                              </td>
-                              <td className="whitespace-nowrap text-end font-normal text-xs text-[#0C8B3F] px-6 pb-2">
-                                Need Approval
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div className="w-[95%] lg:h-14 md:h-14 h-auto mx-auto overflow-hidden flex lg:flex-row md:flex-row flex-col justify-between">
+                        <div className="flex lg:flex-col md:flex-col flex-row border-b-2 lg:border-none md:border-none items-center justify-between">
+                          <p className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6 py-2">
+                            Client Name
+                          </p>
+                          <p className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6">
+                            James Smith
+                          </p>
+                        </div>
+
+                        <div className="flex lg:flex-col md:flex-col flex-row border-b-2 lg:border-none md:border-none items-center justify-between">
+                          <p className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6 py-2">
+                            Approval Date
+                          </p>
+                          <p className="whitespace-nowrap text-center font-normal text-xs text-[#007A8B] px-6">
+                            <i>Waiting</i>
+                          </p>
+                        </div>
+
+                        <div className="flex lg:flex-col md:flex-col flex-row border-b-2 lg:border-none md:border-none items-center justify-between">
+                          <p className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6 py-2">
+                            Approved By
+                          </p>
+                          <p className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6 ">
+                            Not yet
+                          </p>
+                        </div>
+
+                        <div className="flex lg:flex-col md:flex-col flex-row border-b-2 lg:border-none md:border-none items-center justify-between">
+                          <p className="whitespace-nowrap  font-normal text-xs text-[#808080] px-6 py-2">
+                            Status
+                          </p>
+                          <p className="whitespace-nowrap text-end font-normal text-xs text-[#0C8B3F] px-6">
+                            Need Approval
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <hr className="w-[95%] mx-auto" />
+                  <hr className="lg:w-[95%] lg:visible md:visible invisible md:w-[95%] w-full mx-auto" />
                 </div>
               </div>
             </div>

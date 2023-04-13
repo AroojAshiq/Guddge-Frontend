@@ -3,24 +3,26 @@ import React from "react";
 function Users() {
   return (
     <div>
-      <section className=" bg-[#465254] dark:bg-[#04505B] text-black-600 body-font  relative z-0 overflow-hidden  ">
-        <div className=" xl:w-60 xl:h-[450px] lg:w-48 lg:h-96 md:w-[281px] md:h-[460px] absolute  xl:left-[1200px] xl:top-12 lg:left-[830px] lg:top-20 md:left-[490px] md:top-8 left-[200px] top-28  z-10  ">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full  object-center block"
-            src="./user-bg-1.svg"
-          />
+      <section className=" bg-[#465254] lg:h-[80vh] md:h-screen h-[130vh]  flex items-center justify-center  dark:bg-[#04505B] text-black-600 body-font  relative z-0 overflow-hidden  ">
+        <div className="absolute h-full flex w-full">
+          <div className=" w-2/4 h-full flex items-end pb-4">
+            <img
+              alt="gallery"
+              className="w-64 object-cover h-24 block  "
+              src="./user-bg-2.svg"
+            />
+          </div>
+
+          <div className=" h-full flex items-start  justify-end w-2/4  ">
+            <img
+              alt="gallery"
+              className="xl:w-60 xl:h-[450px] lg:w-48 lg:h-96 md:w-[281px] md:h-[460px] relative top-20 object-cover"
+              src="./user-bg-1.svg"
+            />
+          </div>
         </div>
 
-        <div className=" w-64 xl:top-[570px] lg:top-[890px] md:top-[900px] top-[1250px] absolute  z-10 bg-fixed ">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full  object-center block  "
-            src="./user-bg-2.svg"
-          />
-        </div>
-
-        <div className="container px-5 py-28 mx-auto relative z-20  ">
+        <div className="container h-full px-5 py-28 mx-auto absolute z-20  ">
           <div className="flex flex-wrap w-full mb-8 flex-col items-center text-center ">
             <h1 className=" xl:text-[45px] text-4xl leading-[56px] font-bold title-font mb-2 text-[#FFFFFF]">
               What Our Users Says
@@ -30,7 +32,7 @@ function Users() {
               the majority have suffered alteration in some form.
             </p>
           </div>
-          <div className="flex flex-wrap -m-4 mt-16 justify-items-center   grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 gap-3 gap-y-8  ">
+          <div className="-m-4 mt-16 justify-items-center   grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 gap-3 gap-y-8  ">
             <div className=" xl:w-[400px]  lg:w-[380px] md:w-80 w-[350px] xl:h-72 md:h-72 p-4  rounded-xl    bg-[#FFFFFF]  dark:bg-[#013A42]">
               <div className="w-full rounded-lg ml-6 mt-4 flex justify-center items-center ">
                 <img
@@ -47,7 +49,7 @@ function Users() {
                 </p>
               </div>
               <div className="flex justify-center hidden dark:block  ">
-              <hr className=" border-gray-700 w-full  "></hr>
+                <hr className=" border-gray-700 w-full  "></hr>
               </div>
               <div className="  rounded-lg flex justify-items-start  ">
                 <div className=" xl:w-1/5  w-[70px] rounded-lg  mb-2 mt-2  ml-4  ">
@@ -57,7 +59,7 @@ function Users() {
                     src="./user-1.svg"
                   />
                 </div>
-             
+
                 <div className=" rounded-lg   ">
                   <h1 className=" text-black dark:text-white text-lg font-semibold leading-[28px] ml-6 mr-6 mb-4 mt-4   rounded-lg ">
                     Musharof Chy <br></br>{" "}
@@ -86,7 +88,7 @@ function Users() {
                 </p>
               </div>
               <div className="flex justify-center hidden dark:block  ">
-              <hr className=" border-gray-700 w-full "></hr>
+                <hr className=" border-gray-700 w-full "></hr>
               </div>
               <div className="    rounded-lg flex justify-items-start ">
                 <div className=" xl:w-1/5 w-[70px] rounded-lg  mb-2 mt-2  ml-4  ">
@@ -124,7 +126,7 @@ function Users() {
                 </p>
               </div>
               <div className="flex justify-center hidden dark:block  ">
-              <hr className=" border-gray-700 w-full "></hr>
+                <hr className=" border-gray-700 w-full "></hr>
               </div>
               <div className="   rounded-lg flex justify-items-start ">
                 <div className=" xl:w-1/5 w-[70px] rounded-lg  mb-2 mt-2  ml-4  ">

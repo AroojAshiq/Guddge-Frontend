@@ -8,7 +8,7 @@ export default function TimeSheet() {
     <>
       <div className="lg:w-full md:w-[750px] w-full">
         <div className=" flex items-start ">
-          <Link to="/dashboard/projects">
+          <Link to="/dashboard/timesheets">
             <div className="w-[44px] self-start h-[44px] hover:bg-[#F0FAFC] flex items-center justify-center rounded lg:mt-0">
               <img src={angle} alt="back" />
             </div>

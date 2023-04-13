@@ -297,7 +297,7 @@ export default function TimeSheetPage() {
             </p>
           </div>
         </div>
-        <div className="lg:w-[742px] xl:w-[1026px ] max-w-[950px] lg:mx-5 flex items-center justify-center bg-white py-5 px-3">
+        <div className="lg:w-[742px] xl:w-[1026px ] xl:w-[1026px] lg:mx-5 flex items-center justify-center bg-white py-5 px-3">
           <Outlet />
         </div>
       </div>

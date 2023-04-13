@@ -3,23 +3,22 @@ import cancel from "../../assests/cancelIcon.svg";
 import * as Yup from "yup";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import create from "../../assests/createTick.svg";
-// import moment from "moment";
+import { userAdmin } from "../../Api";
+import Swal from "sweetalert2";
 
 const adminSchema = Yup.object().shape({
-  adminName: Yup.string().label("adminName").required("Admin name is required"),
+  adminName: Yup.string()
+    .label("Name of Admin")
+    .required("Admin name is required"),
   email: Yup.string()
+    .label("Email")
     .email("Invalid email address format")
     .required("Email is required"),
-  jobTitle: Yup.string().required("Job title required"),
   phoneNumber: Yup.string().required("Phone Number is required"),
-  DOB: Yup.date().required("Date of Birth is required"),
-  joiningDate: Yup.date().required("Joining date is required"),
-  totalYearExperince: Yup.number().required("Total year of experince required"),
-  guddgeEmailPlan: Yup.string().required("Mail plan is required"),
-  agreement: Yup.string().required("Agreement required"),
-  agreementEndDate: Yup.date().required("Agreement end date is required"),
-  shore: Yup.string().required("Please select value"),
-  admin: Yup.string().required("Please select value"),
+  DOB: Yup.date()
+    .label("Date of Birth")
+    .required("Date of Birth is required")
+    .max(new Date(), "Birthdate must be in the past"),
 });
 
 export default function AdminModal({ showModal, setShowModal }) {
@@ -56,23 +55,35 @@ export default function AdminModal({ showModal, setShowModal }) {
                         adminName: "",
                         email: "",
                         phoneNumber: "",
-                        jobTitle: "",
-                        DOB: new Date(),
-                        joiningDate: new Date(),
-                        totalYearExperince: 0,
-                        guddgeEmailPlan: "",
-                        agreement: "",
-                        agreementEndDate: new Date(),
-                        shore: "",
-                        admin: "",
+                        DOB: "",
                       }}
                       validationSchema={adminSchema}
                       onSubmit={async (values) => {
-                        if (!values) {
-                          setShowModal(true);
+                        try {
+                          const res = await userAdmin(values);
+                          if (res?.data) {
+                            Swal.fire({
+                              width: "20em",
+                              height: "20em",
+                              position: "top-end",
+                              icon: "success",
+                              text: `${res?.data?.message}`,
+                              showConfirmButton: false,
+                              timer: 1500,
+                            });
+                            setShowModal(false);
+                          } else {
+                            Swal.fire({
+                              width: "20em",
+                              height: "20em",
+                              position: "top-end",
+                              icon: "error",
+                              text: `${res?.response?.data?.message}`,
+                            });
+                          }
+                        } catch (error) {
+                          console.log(error?.message);
                         }
-                        console.log(values);
-                        setShowModal(false);
                       }}
                     >
                       {({ isSubmitting, errors, touched, setValues }) => (
@@ -127,7 +138,7 @@ export default function AdminModal({ showModal, setShowModal }) {
                             <Field
                               name="DOB"
                               type="date"
-                              onChange={(e) => setValues(e.target.value)}
+                              // onChange={(e) => setValues(e.target.value)}
                               className={`border text-[#11141C] border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
                                 touched.DOB && errors.DOB ? "is-invalid" : ""
                               }`}
@@ -135,76 +146,6 @@ export default function AdminModal({ showModal, setShowModal }) {
                             <ErrorMessage
                               component="div"
                               name="DOB"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col py-3">
-                            <label
-                              htmlFor="jobTitle"
-                              className="text-[#7A7A79]"
-                            >
-                              Job Title
-                            </label>
-                            <Field
-                              name="jobTitle"
-                              placeholder="Enter Job Title"
-                              className={`border border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.jobTitle && errors.jobTitle
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            />
-                            <ErrorMessage
-                              component="div"
-                              name="jobTitle"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col mt-3 py-3">
-                            <label
-                              htmlFor="joiningDate"
-                              className="text-[#7A7A79]"
-                            >
-                              Joining Date
-                            </label>
-                            <Field
-                              name="joiningDate"
-                              type="date"
-                              className={`border text-[#11141C] border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.joiningDate && errors.joiningDate
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            />
-                            <ErrorMessage
-                              component="div"
-                              name="joiningDate"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col mt-3 py-3">
-                            <label
-                              htmlFor="totalYearExperince"
-                              className="text-[#7A7A79]"
-                            >
-                              Total Years of Experince
-                            </label>
-                            <Field
-                              name="totalYearExperince"
-                              // placeholder="Enter Total Year Experince"
-                              className={`border border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.totalYearExperince &&
-                                errors.totalYearExperince
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            />
-                            <ErrorMessage
-                              component="div"
-                              name="totalYearExperince"
                               className="text-red-700 font-normal font-base text-left"
                             />
                           </div>
@@ -228,125 +169,6 @@ export default function AdminModal({ showModal, setShowModal }) {
                             <ErrorMessage
                               component="div"
                               name="phoneNumber"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col py-3">
-                            <label
-                              htmlFor="guddgeEmailPlan"
-                              className="text-[#7A7A79]"
-                            >
-                              Guddge Email Plan
-                            </label>
-                            <Field
-                              name="guddgeEmailPlan"
-                              placeholder="Enter Guddge Email Plan"
-                              className={`border border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.guddgeEmailPlan &&
-                                errors.guddgeEmailPlan
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            />
-                            <ErrorMessage
-                              component="div"
-                              name="guddgeEmailPlan"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col py-3">
-                            <label
-                              htmlFor="agreement"
-                              className="text-[#7A7A79]"
-                            >
-                              Agreement
-                            </label>
-                            <Field
-                              name="agreement"
-                              placeholder="Enter Agreement"
-                              className={`border border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.agreement && errors.agreement
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            />
-                            <ErrorMessage
-                              component="div"
-                              name="agreement"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col mt-3 py-3">
-                            <label
-                              htmlFor="agreementEndDate"
-                              className="text-[#7A7A79]"
-                            >
-                              Agreement End Date
-                            </label>
-                            <Field
-                              name="agreementEndDate"
-                              type="date"
-                              className={`border text-[#11141C] border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.agreementEndDate &&
-                                errors.agreementEndDate
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            />
-                            <ErrorMessage
-                              component="div"
-                              name="agreementEndDate"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col mt-3 py-3">
-                            <label htmlFor="shore" className="text-[#7A7A79]">
-                              ONSHORE/OFFSHORE
-                            </label>
-                            <Field
-                              as="select"
-                              name="shore"
-                              className={`border text-[#11141C] border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.shore && errors.shore
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            >
-                              <option>Select</option>
-                              <option value="onShore">onShore</option>
-                              <option value="offShore">offShore</option>
-                            </Field>
-                            <ErrorMessage
-                              component="div"
-                              name="shore"
-                              className="text-red-700 font-normal font-base text-left"
-                            />
-                          </div>
-
-                          <div className="flex flex-col mt-3 py-3">
-                            <label htmlFor="admin" className="text-[#7A7A79]">
-                              Select Role
-                            </label>
-                            <Field
-                              as="select"
-                              name="admin"
-                              className={`border text-[#11141C] border-1 border-[#B8B7B6] rounded mt-1 h-[35px] pl-2 outline-none  ${
-                                touched.admin && errors.admin
-                                  ? "is-invalid"
-                                  : ""
-                              }`}
-                            >
-                              <option>Select</option>
-                              <option value="Admin">Admin</option>
-                              <option value="Super Admin">Super Admin</option>
-                            </Field>
-                            <ErrorMessage
-                              component="div"
-                              name="admin"
                               className="text-red-700 font-normal font-base text-left"
                             />
                           </div>

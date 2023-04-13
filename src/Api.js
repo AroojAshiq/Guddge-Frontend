@@ -116,3 +116,20 @@ export const timeSheetData = async (data) => {
     return error;
   }
 };
+
+export const userAdmin = async (data) => {
+  try {
+    const res = await axios.post(`/dashboard/admin`, data);
+    return res;
+  } catch (error) {
+    Swal.fire({
+      width: "20em",
+      height: "20em",
+      position: "top-end",
+      icon: "error",
+      title: "Oops...",
+      text: ` ${error?.response?.data?.message}`,
+    });
+    return error;
+  }
+};

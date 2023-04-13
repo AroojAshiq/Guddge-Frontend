@@ -11,11 +11,9 @@ import {
   format,
   getDay,
   isEqual,
-  // isSameDay,
   isSameMonth,
   isToday,
   parse,
-  // parseISO,
   startOfToday,
   startOfWeek,
 } from "date-fns";
@@ -44,26 +42,9 @@ function Calender() {
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
   }
 
-  // let selectedDayMeetings = meetings.filter((meeting) =>
-  //   isSameDay(parseISO(meeting.startDatetime), selectedDay)
-  // );
   return (
-    // <div className="border">
-    //   <div className="max-w-md border sm:px-7 md:max-w-4xl md:px-6">
-    //     <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200">
     <div className="w-full">
-      <div className="flex items-center px-4 lg:justify-between lg:flex-row flex-col md:justify-between md:flex-row  justify-center my-2">
-        <div className="w-full border-b-2 pb-3">
-          <h1 className="font-semibold text-lg lg:text-left md:text-left text-center">
-            Calendar
-          </h1>
-          <p className="text-base w-full font-normal text-gray-500 lg:text-left md:text-left text-center">
-            You can create multiple role based on license or give role to
-            someone blah blah
-          </p>
-        </div>
-      </div>
-      <div className="px-4 xl:w-72 lg:w-52 mt-10">
+      <div className="px-4 xl:w-72 w-full mt-10">
         <div className="flex items-center mt-5">
           <h2 className="flex-auto font-semibold text-xl text-gray-900">
             {format(firstDayCurrentMonth, "MMMM, yyyy")}
@@ -152,8 +133,6 @@ function Calender() {
         </div>
       </div>
     </div>
-    //   </div>
-    // </div>
   );
 }
 
