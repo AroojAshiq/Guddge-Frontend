@@ -12,8 +12,10 @@ import {
   SettingIcon,
   CalenderIcon,
 } from "../components/iconComponent/Icon";
+import { useUserContext } from "../context";
 
 export default function TimeSheetPage() {
+  const { user } = useUserContext();
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
 
@@ -36,6 +38,7 @@ export default function TimeSheetPage() {
           <SideBar setShow={setShow} show={show} />
         </div>
       </div>
+
       <div className="lg:flex xl:flex w-full items-start xl:justify-center gap-x-0  lg:my-10 mb-10 mt-4 ">
         <div className="shadow-lg max-w-[318px] xl:w-[318px] lg:flex items-center justify-center flex-col bg-white lg:visible hidden ">
           <div className=" w-[282px] flex items-center mt-4 px-4">
@@ -53,6 +56,393 @@ export default function TimeSheetPage() {
               Admin
             </p>
           </div>
+          {/* {user?.role === "Contractor" ? (
+            <>
+              <NavLink to="/dashboard/home">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <HomeIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Home</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/timesheets">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <ProjectIcon />
+                      <p className="font-normal text-[14px] ml-5 ">
+                        Timesheets
+                      </p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/rates">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <SettingIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Rates</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/calender">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <CalenderIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Calendar</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/profileSetting">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <SettingIcon />
+                      <p className="font-normal text-[14px] ml-5 ">
+                        Profile Setting
+                      </p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+            </>
+          ) : null} */}
+
+          {/* {user?.role === "Client" ? (
+            <>
+              <NavLink to="/dashboard/home">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <HomeIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Home</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/projects">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <ProjectIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Projects</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/profile-setting">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <SettingIcon />
+                      <p className="font-normal text-[14px] ml-5 ">
+                        Profile Setting
+                      </p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+            </>
+          ) : null} */}
+
+          {user?.role === "Admin" ? (
+            <ul className="w-full ">
+              <NavLink to="/dashboard/home">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <HomeIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Home</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <li className="w-full">
+                <div className="w-full ">
+                  <div className="relative w-full h-auto overflow-hidden">
+                    <input
+                      type="checkbox"
+                      className="peer absolute top-0 insert-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+                    />
+                    <div className=" h-12 w-full pl-5 flex items-center text-[#64748B]  peer-checked:text-white peer-checked:bg-[#34A2B2]">
+                      <UserIcon />
+                      <p className="font-normal text-[14px]  ml-5  ">Users</p>
+                    </div>
+
+                    <div className="absolute top-3 mr-5 right-3 text-[#64748B] peer-checked:text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180 ">
+                      <ArrowIcon className="transition-transform -rotate-90" />
+                    </div>
+
+                    <div className=" bg-white transition-all duration-500 overflow-hidden max-h-0 peer-checked:max-h-64 pl-10 ">
+                      <div className="px-2 pt-2">
+                        <NavLink to="/dashboard/admin">
+                          {({ isActive }) => (
+                            <button
+                              className={`w-full ${
+                                isActive ? "bg-[#F0FAFC]" : ""
+                              } flex items-center  py-3 rounded-md`}
+                            >
+                              <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
+
+                              <li className="ml-3 text-[#07377C] font-normal text-sm">
+                                Admin
+                              </li>
+                            </button>
+                          )}
+                        </NavLink>
+                      </div>
+
+                      {/* <div className="px-2 pt-2">
+            <NavLink to="/dashboard/supervisors">
+              {({ isActive }) => (
+                <button
+                  className={`w-full ${
+                    isActive ? "bg-[#F0FAFC]" : ""
+                  } flex items-center  py-3 rounded-md`}
+                >
+                  <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
+
+                  <li className="ml-3 text-[#07377C] font-normal text-sm">
+                    Supervisors
+                  </li>
+                </button>
+              )}
+            </NavLink>
+          </div> */}
+                      <div className="px-2">
+                        <NavLink to="/dashboard/contractors">
+                          {({ isActive }) => (
+                            <button
+                              className={`w-full ${
+                                isActive ? "bg-[#F0FAFC]" : ""
+                              } flex items-center  py-3 rounded-md`}
+                            >
+                              <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
+
+                              <li className="ml-3 text-[#07377C] font-normal text-sm">
+                                Contractors
+                              </li>
+                            </button>
+                          )}
+                        </NavLink>
+                      </div>
+
+                      <div className="px-2">
+                        <NavLink to="/dashboard/clients">
+                          {({ isActive }) => (
+                            <button
+                              className={`w-full ${
+                                isActive ? "bg-[#F0FAFC]" : ""
+                              } flex items-center  py-3 rounded-md`}
+                            >
+                              <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
+
+                              <li className="ml-3 text-[#07377C] font-normal text-sm">
+                                Clients
+                              </li>
+                            </button>
+                          )}
+                        </NavLink>
+                      </div>
+
+                      {/* <div className="px-2 pt-2">
+            <NavLink to="/dashboard/employ">
+              {({ isActive }) => (
+                <button
+                  className={`w-full ${
+                    isActive ? "bg-[#F0FAFC]" : ""
+                  } flex items-center  py-3 rounded-md`}
+                >
+                  <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
+
+                  <li className="ml-3 text-[#07377C] font-normal text-sm">
+                    Employ
+                  </li>
+                </button>
+              )}
+            </NavLink>
+          </div> */}
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <NavLink to="/dashboard/timesheets">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <ProjectIcon />
+                      <p className="font-normal text-[14px] ml-5 ">
+                        Timesheets
+                      </p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/projects">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <ProjectIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Projects</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/rates">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <SettingIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Rates</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              <NavLink to="/dashboard/calender">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <CalenderIcon />
+                      <p className="font-normal text-[14px] ml-5 ">Calendar</p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+
+              {/* <NavLink to="/dashboard/setting">
+    {({ isActive }) => (
+      <li
+        className={`flex items-center ${
+          isActive
+            ? "bg-[#34A2B2] text-white"
+            : "bg-white text-[#64748B]"
+        }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+      >
+        <div className="w-[282px] h-[52px] flex items-center">
+          <SettingIcon />
+          <p className="font-normal text-[14px] ml-5 ">Setting</p>
+        </div>
+      </li>
+    )}
+  </NavLink> */}
+
+              <NavLink to="/dashboard/profileSetting">
+                {({ isActive }) => (
+                  <li
+                    className={`flex items-center ${
+                      isActive
+                        ? "bg-[#34A2B2] text-white"
+                        : "bg-white text-[#64748B]"
+                    }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
+                  >
+                    <div className="w-[282px] h-[52px] flex items-center">
+                      <SettingIcon />
+                      <p className="font-normal text-[14px] ml-5 ">
+                        Profile Setting
+                      </p>
+                    </div>
+                  </li>
+                )}
+              </NavLink>
+            </ul>
+          ) : null}
+
           <ul className="w-full ">
             <NavLink to="/dashboard/home">
               {({ isActive }) => (
@@ -106,23 +496,7 @@ export default function TimeSheetPage() {
                       </NavLink>
                     </div>
 
-                    {/* <div className="px-2 pt-2">
-                      <NavLink to="/dashboard/supervisors">
-                        {({ isActive }) => (
-                          <button
-                            className={`w-full ${
-                              isActive ? "bg-[#F0FAFC]" : ""
-                            } flex items-center  py-3 rounded-md`}
-                          >
-                            <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
-
-                            <li className="ml-3 text-[#07377C] font-normal text-sm">
-                              Supervisors
-                            </li>
-                          </button>
-                        )}
-                      </NavLink>
-                    </div> */}
+                    
                     <div className="px-2">
                       <NavLink to="/dashboard/contractors">
                         {({ isActive }) => (
@@ -140,6 +514,7 @@ export default function TimeSheetPage() {
                         )}
                       </NavLink>
                     </div>
+
                     <div className="px-2">
                       <NavLink to="/dashboard/clients">
                         {({ isActive }) => (
@@ -158,23 +533,7 @@ export default function TimeSheetPage() {
                       </NavLink>
                     </div>
 
-                    {/* <div className="px-2 pt-2">
-                      <NavLink to="/dashboard/employ">
-                        {({ isActive }) => (
-                          <button
-                            className={`w-full ${
-                              isActive ? "bg-[#F0FAFC]" : ""
-                            } flex items-center  py-3 rounded-md`}
-                          >
-                            <div className="h-2 w-2 bg-[#07377C] rounded-full ml-3"></div>
-
-                            <li className="ml-3 text-[#07377C] font-normal text-sm">
-                              Employ
-                            </li>
-                          </button>
-                        )}
-                      </NavLink>
-                    </div> */}
+                   
                   </div>
                 </div>
               </div>
@@ -248,22 +607,7 @@ export default function TimeSheetPage() {
               )}
             </NavLink>
 
-            <NavLink to="/dashboard/setting">
-              {({ isActive }) => (
-                <li
-                  className={`flex items-center ${
-                    isActive
-                      ? "bg-[#34A2B2] text-white"
-                      : "bg-white text-[#64748B]"
-                  }  justify-center hover:bg-[#34A2B2] hover:text-white  px-4`}
-                >
-                  <div className="w-[282px] h-[52px] flex items-center">
-                    <SettingIcon />
-                    <p className="font-normal text-[14px] ml-5 ">Setting</p>
-                  </div>
-                </li>
-              )}
-            </NavLink>
+           
 
             <NavLink to="/dashboard/profileSetting">
               {({ isActive }) => (

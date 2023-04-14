@@ -19,6 +19,7 @@ const loginSchema = Yup.object().shape({
     .label("Confirm Password")
     .required()
     .oneOf([Yup.ref("password"), null], "Password must match"),
+  role: Yup.string().required("Please chooose your role"),
 });
 
 export default function LoginByEmail() {
@@ -40,6 +41,7 @@ export default function LoginByEmail() {
                 email: "",
                 password: "",
                 confirmPassword: "",
+                role: "",
               }}
               validationSchema={loginSchema}
               onSubmit={async (values) => {
@@ -75,8 +77,24 @@ export default function LoginByEmail() {
                 }
               }}
             >
-              {({ isSubmitting, errors, touched }) => (
+              {({ isSubmitting, errors, touched, values }) => (
                 <Form>
+                  <div id="my-radio-group">Select Your Role</div>
+                  <div
+                    role="group"
+                    aria-labelledby="my-radio-group"
+                    className="flex justify-between"
+                  >
+                    <label className=" flex items-center gap-1">
+                      <Field type="radio" name="role" value="Contractor" />
+                      <span> Contractor</span>
+                    </label>
+                    <label className="outline-none border-none flex items-center gap-1">
+                      <Field type="radio" name="role" value="Client" />
+                      <span> Client</span>
+                    </label>
+                  </div>
+
                   <div className="flex flex-col">
                     <label htmlFor="name">Name</label>
                     <Field

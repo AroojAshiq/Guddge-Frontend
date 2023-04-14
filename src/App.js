@@ -36,7 +36,7 @@ import {
   TimeViewSheets,
   CalenderPage,
 } from "./components/timeSheet";
-// import ProtectedRouted from "./components/timeSheet/ProtectedRoutes";
+import ProtectedRouted from "./components/timeSheet/ProtectedRoutes";
 import TimeSheetPage from "./pages/TimeSheetPage";
 import ErrorMessage from "./components/ErrorMessage";
 import { UserContextProvider } from "./context";
@@ -86,30 +86,30 @@ function App() {
           <Route path="/timesheet" element={<LoginBymsOffice />} />
           <Route path="/loginbyemail" element={<LoginByEmail />} />
           <Route path="/registerbyemail" element={<RegisterByEmail />} />
-          {/* <Route path="/" element={<ProtectedRouted />}> */}
-          <Route path="dashboard" element={<TimeSheetPage />}>
-            <Route index element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="admin" element={<Admin />} />
-            <Route path="employ" element={<Employ />} />
-            <Route path="supervisors" element={<Supervisors />} />
-            <Route path="contractors" element={<Contractors />} />
-            <Route path="clients" element={<Clients />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="viewproject" element={<ViewProject />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="rates" element={<Rates />} />
-            <Route path="timesheets" element={<TimeSheet />}>
-              <Route index element={<TSheetAproval />} />
-              <Route path="approval" element={<TSheetAproval />} />
-              <Route path="approved" element={<TSheetAproved />} />
+          <Route path="/" element={<ProtectedRouted />}>
+            <Route path="dashboard" element={<TimeSheetPage />}>
+              <Route index element={<Home />} />
+              <Route path="home" element={<Home />} />
+              <Route path="admin" element={<Admin />} />
+              <Route path="employ" element={<Employ />} />
+              <Route path="supervisors" element={<Supervisors />} />
+              <Route path="contractors" element={<Contractors />} />
+              <Route path="clients" element={<Clients />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="viewproject" element={<ViewProject />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="rates" element={<Rates />} />
+              <Route path="timesheets" element={<TimeSheet />}>
+                <Route index element={<TSheetAproval />} />
+                <Route path="approval" element={<TSheetAproval />} />
+                <Route path="approved" element={<TSheetAproved />} />
+              </Route>
+              <Route path="calender" element={<CalenderPage />} />
+              <Route path="view-time-sheets" element={<TimeViewSheets />} />
+              <Route path="setting" element={<Setting />} />
+              <Route path="profile-setting" element={<ProfileSetting />} />
             </Route>
-            <Route path="calender" element={<CalenderPage />} />
-            <Route path="view-time-sheets" element={<TimeViewSheets />} />
-            <Route path="setting" element={<Setting />} />
-            <Route path="profileSetting" element={<ProfileSetting />} />
           </Route>
-          {/* </Route> */}
           <Route path="*" element={<ErrorMessage />} />
         </Routes>
         <Footer />

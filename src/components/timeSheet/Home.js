@@ -11,7 +11,7 @@ import { UpRightArrowIcon } from "../iconComponent/Icon";
 export default function Home() {
   return (
     <>
-      <div className="lg:w-[665px] md:w-[700px] w-[350px] md:px-5">
+      <div className="lg:w-full md:w-[700px] md:px-5">
         <div className="flex items-center pb-6 border-b lg:justify-between gap-2 lg:flex-row md:justify-between md:flex-row  flex-col justify-center my-2">
           <div className="w-7/12 px-4">
             <p className="font-medium text-sm lg:text-left md:text-left text-center">
@@ -33,9 +33,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className="w-full border-b pb-4 gap-x-3 pt-6 flex lg:flex-row md:flex-row flex-col justify-between  items-center ">
-          <div className="px-4 bg-[#49A147] flex justify-center rounded-lg h-[109px] lg:mt-0 md:mt-0 mt-4">
-            <div className="lg:w-[280px] md:w-[290px] w-[280px] h-full flex flex-col items-center justify-center">
+          <div className=" md:w-2/4 w-full bg-[#49A147] flex justify-center rounded-lg h-[109px] lg:mt-0 md:mt-0 mt-4">
+            <div className="w-full xl:px-6 px-4 h-full flex flex-col items-center justify-center">
               <p className="w-full text-white text-xs font-medium">
                 Client Sheets to Review
               </p>
@@ -49,8 +50,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="px-4 bg-[#EDFFED] flex justify-center rounded-lg h-[109px] lg:mt-0 md:mt-0 mt-4">
-            <div className="lg:w-[280px] md:w-[290px] w-[280px] h-full flex flex-col items-center justify-center">
+          <div className=" bg-[#EDFFED] md:w-2/4 w-full flex justify-center rounded-lg h-[109px] lg:mt-0 md:mt-0 mt-4">
+            <div className="h-full w-full xl:px-6 px-4 flex flex-col items-center justify-center">
               <p className="w-full text-xs font-medium">
                 Client Sheets to Review
               </p>
@@ -64,12 +65,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-5 h-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-0 justify-center lg:gap-x-9 gap-4">
-          <div className="lg:w-[160px] w-[320px] bg-[#FFF8E7] pl-3 pr-2 flex justify-center items-center rounded-lg h-[109px]">
-            <div className="boeder">
+        <div className="mt-5 h-auto grid lg:grid-cols-2 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center xl:gap-x-3 lg:gap-x-3 gap-4">
+          
+          <div className="bg-[#FFF8E7] w-full px-3 gap-2 flex justify-center items-center rounded-lg h-[109px]">
+            <div>
               <img src={img1} alt="total-contractor" />
             </div>
-            <div className="w-full h-full flex flex-col items-center justify-center pr-1">
+            <div className="w-full h-full flex flex-col items-center justify-center">
               <p className="w-full font-medium text-xs text-[#353535] mt-3">
                 Total Contractors
               </p>
@@ -82,7 +84,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:w-[160px]  w-[320px] bg-[#E2DBFE] pr-3   flex justify-center items-center rounded-lg h-[109px]">
+          <div className=" bg-[#E2DBFE] px-3 gap-2   flex justify-center items-center rounded-lg h-[109px]">
             <div className="">
               <img src={img2} alt="total-contractor h-full" />
             </div>
@@ -99,11 +101,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:w-[160px]  w-[320px] bg-[#E4FFEC] pl-3 flex justify-center items-center rounded-lg h-[109px]">
-            <div className="boeder">
+          <div className=" bg-[#E4FFEC] px-4 gap-2 flex justify-center items-center rounded-lg h-[109px]">
+            <div >
               <img src={img3} alt="total-contractor" />
             </div>
-            <div className="w-full h-full flex flex-col items-center justify-center px-3">
+            <div className="w-full ml-3 h-full flex flex-col items-center justify-center">
               <p className="w-full font-medium text-xs text-[#353535] mt-3">
                 Total Supervisors
               </p>
@@ -116,11 +118,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:w-[160px]  w-[320px] bg-[#E1FBFF] pl-3 flex justify-center items-center rounded-lg h-[109px]">
-            <div className="boeder">
+          <div className=" bg-[#E1FBFF]  flex justify-center items-center gap-2 px-3 rounded-lg h-[109px]">
+            <div>
               <img src={img4} alt="total-contractor" />
             </div>
-            <div className="w-full h-full flex flex-col items-center justify-center px-3">
+            <div className="w-full h-full flex flex-col items-center justify-center">
               <p className="w-full font-medium text-xs text-[#353535] mt-3">
                 Total Projects
               </p>

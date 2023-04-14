@@ -67,7 +67,7 @@ export default function TSheetAproval() {
                   </h1>
                   <Link to="/dashboard/view-time-sheets">
                     <button className="flex outline-none lg:mt-0 md:mt-0 mt-4 h-[44px] w-[136px] justify-center rounded-lg text-[17px] font-medium items-center gap-x-2 bg-black text-white">
-                      <p>Open</p>
+                      <p>Create</p>
                       <ArrowRight />
                     </button>
                   </Link>

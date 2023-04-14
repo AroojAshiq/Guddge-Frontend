@@ -173,7 +173,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                 Contact
               </Link>
               <Link
-                to="/"
+                to="/timesheet"
                 className="xl:text-base md:text-sm font-normal font-inter text-white hover:text-gray-900"
               >
                 TimeSheet
