@@ -36,7 +36,7 @@ import {
   TimeViewSheets,
   CalenderPage,
 } from "./components/timeSheet";
-import ProtectedRouted from "./components/timeSheet/ProtectedRoutes";
+// import ProtectedRouted from "./components/timeSheet/ProtectedRoutes";
 import TimeSheetPage from "./pages/TimeSheetPage";
 import ErrorMessage from "./components/ErrorMessage";
 import { UserContextProvider } from "./context";
@@ -86,8 +86,8 @@ function App() {
           <Route path="/timesheet" element={<LoginBymsOffice />} />
           <Route path="/loginbyemail" element={<LoginByEmail />} />
           <Route path="/registerbyemail" element={<RegisterByEmail />} />
-          <Route path="/" element={<ProtectedRouted />}>
-            <Route path="dashboard" element={<TimeSheetPage />}>
+          {/* <Route path="/" element={<ProtectedRouted />}> */}
+            <Route path="/dashboard" element={<TimeSheetPage />}>
               <Route index element={<Home />} />
               <Route path="home" element={<Home />} />
               <Route path="admin" element={<Admin />} />
@@ -109,7 +109,7 @@ function App() {
               <Route path="setting" element={<Setting />} />
               <Route path="profile-setting" element={<ProfileSetting />} />
             </Route>
-          </Route>
+          {/* </Route> */}
           <Route path="*" element={<ErrorMessage />} />
         </Routes>
         <Footer />
