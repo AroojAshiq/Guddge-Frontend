@@ -1,5 +1,5 @@
 import React from "react";
-import { Feature1, Feature2, Feature3, Feature4 } from "../../iconComponent/Icon";
+import {Feature2, Feature3, Feature4 } from "../../iconComponent/Icon";
 
 import { useNavigate } from "react-router-dom";
 

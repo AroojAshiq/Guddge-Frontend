@@ -9,7 +9,6 @@ import ShowCase from "../components/ShowCase/ShowCase";
 import HomeServices from "../components/HomePageComponents/HomeServices/HomeServices";
 import OurClients from "../components/HomePageComponents/OurClients/OurClients";
 function HomePage({ darkMode, setDarkMode }) {
-  // console.log(darkMode, "dfghjk");
   return (
     <>
       <Slide setDarkMode={setDarkMode} darkMode={darkMode} />

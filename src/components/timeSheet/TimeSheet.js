@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import angle from "../../assests/angleIcon.svg";
-import { StarIcon, ArrowRight } from "../iconComponent/Icon";
+import { StarIcon, CreateIcon } from "../iconComponent/Icon";
 
 export default function TimeSheet() {
   return (
@@ -19,8 +19,8 @@ export default function TimeSheet() {
             </h1>
           </div>
         </div>
-        <div>
-          <div className="pt-4 pl-8 flex lg:gap-x-14 md:gap-x-14 gap-x-5 border">
+        <div className="flex w-[94%] mx-auto justify-between items-center">
+          <div className="pt-4 flex lg:gap-x-14 md:gap-x-14 gap-x-5">
             <NavLink to="/dashboard/timesheets/approval">
               <button className="flex gap-x-1 text-[#169AA3] justify-center items-center">
                 <div className="-mt-2">
@@ -38,12 +38,12 @@ export default function TimeSheet() {
             </NavLink>
           </div>
           <button className="flex outline-none lg:mt-0 md:mt-0 mt-4 h-[44px] w-[136px] justify-center rounded-lg text-[17px] font-medium items-center gap-x-2 bg-black text-white">
+            <CreateIcon />
             <p>Create</p>
-            <ArrowRight />
           </button>
         </div>
 
-        <div className="h-screen w-full overflow-y-auto px-4 mt-10">
+        <div className="h-screen w-full  px-4 mt-10">
           <Outlet />
         </div>
       </div>
