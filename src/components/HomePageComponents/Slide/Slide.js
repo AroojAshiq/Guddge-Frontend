@@ -11,7 +11,7 @@ function Slide({ darkMode, setDarkMode }) {
           darkMode ? "bg-[#F5F5F5]" : "bg-[#07343A]"
         } `}
       >
-        <div className="w-full h-full absolute flex items-center justify-center border">
+        <div className="w-full h-full absolute flex items-center justify-center ">
           <Slide1 />
         </div>
         <div className="absolute w-full h-full flex items-center justify-center">
