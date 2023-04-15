@@ -7,31 +7,31 @@ const Choose = () => {
   const navigate = useNavigate();
   const responsive = {
     desktop: {
-      breakpoint: { max: 1500, min: 1000 },
+      breakpoint: { max: 1920, min: 1280 },
       items: 4,
       slidesToSlide: 1, // optional, default to 1.
     },
 
     laptop:{
-      breakpoint: { max: 1100, min: 800 },
+      breakpoint: { max: 1279, min: 1024 },
       items: 2,
       slidesToSlide: 1,
     },
     tablet: {
-      breakpoint: { max: 800, min: 600 },
+      breakpoint: { max: 1024, min: 600 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 500, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
 
   return (
-    <section className=" bg-[#606060] dark:bg-[#04505B] text-black-600 body-font flex justify-center items-center  ">
-      <div className="choose container py-24 px-4  space-y-16 ">
+    <section className="3xl:px-[70px] 2xl:px-[50px] xl:px-[40px] lg:px-[40px] md:px-[40px] px-2 bg-[#606060] dark:bg-[#04505B] text-black-600 body-font flex justify-center items-center  relative z-0 ">
+      <div className="choose container py-24  space-y-16 ">
         <div className="flex flex-wrap w-full  mb-8 flex-col items-center">
           <h1 className=" xltext-[45px] text-4xl leading-[56px] font-bold title-font mb-2 text-white ">
             ShowCase
@@ -50,10 +50,10 @@ const Choose = () => {
           autoPlaySpeed={8328823}
           draggable={true}
           transitionDuration={300}
-          containerclassName="main_card1  mx-auto "
+          containerclassName="main_card1   relative  "
           removeArrowOnDeviceType={[""]}
         >
-          <div className="xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px] xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6 ml-4 mr-5 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
+          <div className="3xl:w-[420px] 2xl:w-[350px] xl:w-[280px] lg:w-[430px] md:w-[320px] w-11/12 p-[32px] 3xl:ml-2 3xl:mr-2 2xl:ml-2 2xl:mr-6 xl:ml-4 xl:mr-0 lg:ml-4 lg:mr-9 md:ml-2 md:mr-4 ml-3 mr-5 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
             <div className="  card_title_flex  space-y-4">
               <img src="./port-1.svg" className="w-full " alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">
@@ -64,7 +64,7 @@ const Choose = () => {
               Business Intelligence
             </div>
           </div>
-          <div className="xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px] xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6 ml-4 mr-5 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
+          <div className="3xl:w-[420px] 2xl:w-[350px] xl:w-[280px] lg:w-[430px] md:w-[320px] w-11/12 p-[32px] 3xl:ml-2  3xl:mr-2 2xl:ml-2 2xl:mr-6  xl:ml-4 xl:mr-0 lg:ml-4 lg:mr-9 md:ml-2 md:mr-4 ml-3 mr-4 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
             <div className="  card_title_flex  space-y-4">
               <img src="./port-2.svg" className="w-full " alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">
@@ -76,7 +76,7 @@ const Choose = () => {
             </div>
           </div>
 
-          <div className="xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px] xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6 ml-4 mr-5 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
+          <div className="3xl:w-[420px] 2xl:w-[350px] xl:w-[280px] lg:w-[430px] md:w-[320px] w-11/12 p-[32px] 3xl:ml-2 3xl:mr-2 2xl:ml-2 2xl:mr-6 xl:ml-4 xl:mr-0 lg:ml-4 lg:mr-9 md:ml-2 md:mr-4 ml-3 mr-4 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
             <div className="  card_title_flex  space-y-4">
               <img src="./port-3.svg" className=" w-full " alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">
@@ -88,7 +88,7 @@ const Choose = () => {
             </div>
           </div>
 
-          <div className="xl:w-[300px] lg:w-[400px] md:w-[320px] w-11/12 p-[32px] xl:ml-0 xl:mr-0 lg:ml-12 lg:mr-12 md:ml-6 md:mr-6 ml-4 mr-5 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
+          <div className="3xl:w-[420px] 2xl:w-[350px] xl:w-[280px] lg:w-[430px] md:w-[320px] w-11/12 p-[32px] 3xl:ml-2 3xl:mr-2 2xl:ml-2 2xl:mr-6  xl:ml-4 xl:mr-0 lg:ml-4 lg:mr-9 md:ml-2 md:mr-4 ml-3 mr-4 bg-[#F9F9F9] dark:bg-[#013A42] rounded-2xl space-y-4">
             <div className="  card_title_flex  space-y-4">
               <img src="./port-4.svg" className=" w-full " alt="" />
               <div className="chooose_title text-base leading-[32px] font-bold text-black dark:text-white">

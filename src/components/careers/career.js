@@ -1,23 +1,20 @@
 import React from "react";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 function Career() {
   return (
-    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A] border border-black border text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
-      <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] xl:-top-8 lg:-top-8 md:-top-2 -top-2  z-10">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A]   flex justify-center items-center text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
+      <div className="w-full absolute   flex justify-end  ">
+        <div className=" xl:block lg:block md:block hidden xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[370px] md:h-[390px]  w-[300px] h-[290px] relative xl:-top-[240px] lg:-top-[300px] md:-top-[300px]  -top-[620px]  ">
+          <Frame1 />
+        </div>
+      </div>
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-[50px] lg:-top-[60px] md:-top-[70px] -top-[600px] bg-gradient-to-t  ">
+          <Frame2 />
+        </div>
       </div>
 
-      <div className="xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[150px] lg:top-[160px] md:top-[150px] top-[200px]  absolute  z-10 -left-12 bg-gradient-to-t ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
-      </div>
       <div className="container w-full  px-6 py-12 mx-auto  z-10">
         <div className="flex justify-between lg:flex-row md:flex-row flex-col">
           <div className="flex flex-wrap lg:w-7/12 md:w-7/12 w-full mb-8 flex-col lg:items-start ">
@@ -42,7 +39,7 @@ function Career() {
               <div className="relative  flex flex justify-center w-full flex-wrap items-stretch  gap-6 ">
                 <input
                   type="search"
-                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC]    dark:bg-[#01434B] dark:border-[#04505B]   bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out  focus:text-neutral-700  focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
+                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC]    dark:bg-[#01434B] dark:border-none   bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out  focus:text-neutral-700  focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
                   placeholder="Search Career"
                   aria-label="Search"
                   aria-describedby="button-addon1"
@@ -74,8 +71,7 @@ function Career() {
 
         <div className="flex  justify-center relative z-20 mb-8 mt-4">
           <div className=" flex flex-wrap lg:w-10/12 md:w-11/12 w-full  h-full py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7] dark:bg-[#04505B]  border border-[#E7E7E7] dark:border-[#08616CF7]">
-            
-          <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+            <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -84,7 +80,7 @@ function Career() {
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
                     <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
-                    Data Analyst Require For Guddage
+                      Data Analyst Require For Guddage
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -390,7 +386,6 @@ function Career() {
                 </div>
               </div>
             </div>
-
 
             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
@@ -401,7 +396,7 @@ function Career() {
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
                     <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
-                    Digital Marketing Specialist For Guddge
+                      Digital Marketing Specialist For Guddge
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -708,8 +703,7 @@ function Career() {
               </div>
             </div>
 
-
-             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+            <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -718,7 +712,7 @@ function Career() {
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
                     <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
-                    Software Engineer Require
+                      Software Engineer Require
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -1025,8 +1019,7 @@ function Career() {
               </div>
             </div>
 
-
-             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+            <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -1035,7 +1028,7 @@ function Career() {
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
                     <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
-                    Financial Analyst Require
+                      Financial Analyst Require
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -1342,8 +1335,7 @@ function Career() {
               </div>
             </div>
 
-
-             <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
+            <div className="  w-11/12   h-full p-2 space-y-4 rounded-2xl bg-white  dark:bg-[#042A2F]   ">
               <div className="w-full h-auto rounded-2xl ">
                 <div className=" relative w-full rounded-2xl  bg-[#F9F9F9]  dark:bg-[#042A2F]  ">
                   <input
@@ -1352,7 +1344,7 @@ function Career() {
                   />
                   <div className=" bg-[#F9F9F9]  dark:bg-[#042A2F]  h-16 w-full p-6 flex items-center rounded-2xl    ">
                     <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl text-md leading-[32px] font-bold text-black dark:text-white ">
-                    Content Writer Require
+                      Content Writer Require
                     </h1>
                   </div>
                   <div className="absolute top-5 right-3 text-white  transition-tranform duration-500 rotate-0 peer-checked:rotate-180   ">
@@ -1658,8 +1650,6 @@ function Career() {
                 </div>
               </div>
             </div>
-            
-
           </div>
         </div>
       </div>

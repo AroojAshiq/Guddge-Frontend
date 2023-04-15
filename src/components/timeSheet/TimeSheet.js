@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import angle from "../../assests/angleIcon.svg";
-import { StarIcon } from "../iconComponent/Icon";
+import { StarIcon, ArrowRight } from "../iconComponent/Icon";
 
 export default function TimeSheet() {
   return (
@@ -19,22 +19,28 @@ export default function TimeSheet() {
             </h1>
           </div>
         </div>
-        <div className="pt-4 pl-8 flex lg:gap-x-14 md:gap-x-14 gap-x-5">
-          <NavLink to="/dashboard/timesheets/approval">
-            <button className="flex gap-x-1 text-[#169AA3] justify-center items-center">
-              <div className="-mt-2">
-                <StarIcon />
-              </div>
-              <p className="border-b-2 pb-2 border-[#169AA3] ">
-                T-sheet Approval
-              </p>
-            </button>
-          </NavLink>
-          <NavLink to="/dashboard/timesheets/approved">
-            <button className="flex gap-x-1 border-b-2  hover:text-[#169AA3] hover:border-[#169AA3]  justify-center  items-center">
-              <p className=" pb-2">T-sheet Approved</p>
-            </button>
-          </NavLink>
+        <div>
+          <div className="pt-4 pl-8 flex lg:gap-x-14 md:gap-x-14 gap-x-5 border">
+            <NavLink to="/dashboard/timesheets/approval">
+              <button className="flex gap-x-1 text-[#169AA3] justify-center items-center">
+                <div className="-mt-2">
+                  <StarIcon />
+                </div>
+                <p className="border-b-2 pb-2 border-[#169AA3] ">
+                  Review Time Sheet
+                </p>
+              </button>
+            </NavLink>
+            <NavLink to="/dashboard/timesheets/approved">
+              <button className="flex gap-x-1 border-b-2  hover:text-[#169AA3] hover:border-[#169AA3]  justify-center  items-center">
+                <p className=" pb-2">Time Sheet Approved</p>
+              </button>
+            </NavLink>
+          </div>
+          <button className="flex outline-none lg:mt-0 md:mt-0 mt-4 h-[44px] w-[136px] justify-center rounded-lg text-[17px] font-medium items-center gap-x-2 bg-black text-white">
+            <p>Create</p>
+            <ArrowRight />
+          </button>
         </div>
 
         <div className="h-screen w-full overflow-y-auto px-4 mt-10">

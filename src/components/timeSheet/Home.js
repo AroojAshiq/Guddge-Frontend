@@ -66,7 +66,6 @@ export default function Home() {
         </div>
 
         <div className="mt-5 h-auto grid lg:grid-cols-2 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center xl:gap-x-3 lg:gap-x-3 gap-4">
-          
           <div className="bg-[#FFF8E7] w-full px-3 gap-2 flex justify-center items-center rounded-lg h-[109px]">
             <div>
               <img src={img1} alt="total-contractor" />
@@ -102,7 +101,7 @@ export default function Home() {
           </div>
 
           <div className=" bg-[#E4FFEC] px-4 gap-2 flex justify-center items-center rounded-lg h-[109px]">
-            <div >
+            <div>
               <img src={img3} alt="total-contractor" />
             </div>
             <div className="w-full ml-3 h-full flex flex-col items-center justify-center">

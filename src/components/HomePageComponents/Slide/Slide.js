@@ -1,21 +1,18 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
+import { Slide1 } from "../../iconComponent/Slide";
+
 function Slide({ darkMode, setDarkMode }) {
   const navigate = useNavigate();
   return (
-    <div className="w-full lg:h-[500px] relative md:h-[400px] h-[300px]">
+    <div className="w-full lg:h-[500px] relative md:h-[400px] h-[300px] overflow-hidden z-0">
       <section
         className={`w-full h-full body-font relative   ${
           darkMode ? "bg-[#F5F5F5]" : "bg-[#07343A]"
         } `}
       >
-        <div className="w-full h-full absolute ">
-          <img
-            alt="gallery"
-            className="w-full h-full block"
-            src="./Group 11.svg"
-          />
+        <div className="w-full h-full absolute flex items-center justify-center border">
+          <Slide1 />
         </div>
         <div className="absolute w-full h-full flex items-center justify-center">
           <div className="lg:w-7/12  md:w-7/12 w-full p-4  xl:gap-8 lg:gap-6 md:gap-4 gap-4 flex flex-col items-center justify-center  ">
@@ -32,19 +29,18 @@ function Slide({ darkMode, setDarkMode }) {
               <button
                 type="button"
                 onClick={() => {
-                  navigate("/web-development");
+                  navigate("/");
                 }}
                 className=" text-white xl:w-[151px] xl:h-[56px] lg:w-[140px] lg:h-[52px] md:w-[123px] md:h-[42px] w-[100px] h-[36px] bg-[#078CA0]  dark:bg-[#4BA9B6] hover:text-white hover:bg-gradient-to-b from-[#3799CC] to-[#374BCC] focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg xl:text-base lg:text-base md:text-base text-sm  leading-6 xl:px-[32px] py-[16px] lg:px-[28px] md:px-[20px] px-[13px] text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2 "
               >
                 Learn More
               </button>
-
               <button
                 type="button"
                 onClick={() => {
-                  navigate("/web-development");
+                  navigate("/services");
                 }}
-                className=" text-white  bg-[#078CA0] xl:w-[151px] xl:h-[56px] lg:w-[140px] lg:h-[52px] md:w-[123px] md:h-[42px] w-[100px] h-[36px] dark:bg-[#4BA9B6] hover:text-white hover:bg-gradient-to-b from-[#3799CC] to-[#374BCC] focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg xl:text-base lg:text-base md:text-base text-sm leading-6 xl:px-[46px] py-[16px] lg:px-[40px] md:px-[35px] px-[26px] text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2 "
+                className=" text-[#565656] dark:text-white border border-[#565656] dark:border-none dark:bg-[#FFFFFF33] xl:w-[151px] xl:h-[56px] lg:w-[140px] lg:h-[52px] md:w-[123px] md:h-[42px] w-[100px] h-[36px] dark:bg-[#4BA9B6] hover:text-white hover:bg-gradient-to-b from-[#3799CC] to-[#374BCC] focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg xl:text-base lg:text-base md:text-base text-sm leading-6 xl:px-[46px] py-[16px] lg:px-[40px] md:px-[35px] px-[26px] text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2 "
               >
                 Services
               </button>
@@ -55,5 +51,4 @@ function Slide({ darkMode, setDarkMode }) {
     </div>
   );
 }
-
 export default Slide;

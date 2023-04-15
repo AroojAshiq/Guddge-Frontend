@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { ArrowIcon, ArrowRight } from "../iconComponent/Icon";
+import { ArrowIcon } from "../iconComponent/Icon";
 
 export default function TSheetAproval() {
   const data = [
@@ -65,12 +64,12 @@ export default function TSheetAproval() {
                   <h1 className="text-[17px] font-bold sm:text-center text-center">
                     James Smith Home Project Time sheet
                   </h1>
-                  <Link to="/dashboard/view-time-sheets">
+                  {/* <Link to="/dashboard/view-time-sheets">
                     <button className="flex outline-none lg:mt-0 md:mt-0 mt-4 h-[44px] w-[136px] justify-center rounded-lg text-[17px] font-medium items-center gap-x-2 bg-black text-white">
                       <p>Create</p>
                       <ArrowRight />
                     </button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div>

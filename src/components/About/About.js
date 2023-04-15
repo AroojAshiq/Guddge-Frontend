@@ -1,22 +1,18 @@
 import React from "react";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 function Choose() {
   return (
-    <section className=" bg-[#F5F5F5] dark:bg-[#07343A]  text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
-      <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] xl:-top-8 lg:-top-8 md:-top-2 -top-2 z-10">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+    <section className=" bg-[#F5F5F5] dark:bg-[#07343A] w-[100%] text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
+      <div className="w-full absolute flex justify-end items-end">
+        <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] relative xl:-top-[360px] lg:-top-[380px] md:-top-[430px] -top-[850px] ">
+          <Frame1 />
+        </div>
       </div>
-
-      <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[150px] lg:top-[160px] md:top-[150px] top-[200px] absolute  z-10 -left-12 bg-gradient-to-t  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-28 md:-top-60 -top-[600px] bg-gradient-to-t  ">
+          <Frame2 />
+        </div>
       </div>
       <div className="container w-full  px-6 py-12 mx-auto ">
         <div className="flex flex-wrap w-full  mb-8 flex-col ">
@@ -24,7 +20,7 @@ function Choose() {
             Home{" > "}
             <span className=" text-base leading-[24px] font-medium  mb-2 text-black dark:text-white">
               {" "}
-               About
+              About
             </span>
           </h1>
           <h1 className=" xl:text-[45px] text-4xl leading-[56px] font-bold lg:text-start md:text-start text-center  mb-2 text-[#4B4B4B] dark:text-white">
@@ -38,7 +34,7 @@ function Choose() {
 
         <div className="flex  justify-center relative z-20 mb-8  ">
           <div className=" flex flex-wrap  xl:w-[1135px] lg:w-[950px] md:w-[700px] w-full py-8 rounded-2xl justify-center space-y-6  mb-8 bg-[#E7E7E7] dark:bg-[#00343C] border border-[#E7E7E7] dark:border-[#08616CF7]">
-            <div className="  xl:w-[1071px] lg:w-[900px] md:w-[650px] w-[300px] h-auto p-[32px] space-y-[40px] rounded-2xl bg-white dark:bg-[#042A2F]  ">
+            <div className="  xl:w-[1071px] lg:w-[900px] md:w-[650px] w-[300px] h-auto lg:p-8 md:p-8 p-0 space-y-[40px] rounded-2xl bg-white dark:bg-[#042A2F]  ">
               <div className=" w-full h-12 flex justify-center mt-2   ">
                 <img
                   alt="gallery"
@@ -46,9 +42,11 @@ function Choose() {
                   src="./logo.svg"
                 />
               </div>
-            
+
               <div className="w-full p-4">
-              <h1 className=" xl:text-2xl g:text-2xl text-xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">About Us</h1>
+                <h1 className=" xl:text-2xl g:text-2xl text-xl  font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                  About Us
+                </h1>
                 <p className="xl:text-lg lg:text-lg md:text-md text-md font-normal leading-[28px] lg:text-start md:text-start text-center text-black dark:text-[#B5B5B5]">
                   Guddge is a professional services company specialized in
                   delivering Information Management, and Business Intelligence
@@ -69,7 +67,9 @@ function Choose() {
             <div className=" xl:w-[1071px] lg:w-[900px] md:w-[650px] w-[300px] p-[32px] flex  space rounded-2xl justify-between bg-white dark:bg-[#042A2F] z-20  flex lg:flex-row md:flex-row flex-col ">
               <div className="w-auto h-40 p-4  flex justify-center items-center  ">
                 <ul className="list-reset text-black space-y-2 mt-2  text-grey-darker rounded ">
-              <h1 className="xl:text-2xl lg:text-2xl  text-xl font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">Contact Us</h1>
+                  <h1 className="xl:text-2xl lg:text-2xl  text-xl font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                    Contact Us
+                  </h1>
 
                   <li className="flex items-center mb-1 text-base font-medium leading-[20px]  text-[#959CB1] ">
                     <svg
@@ -134,9 +134,10 @@ function Choose() {
               <div className="lg:w-0.5 md:w-0.5 w-auto lg:h-40 md:h-40 h-0.5  lg:mt-0 md:mt-0 mt-10 lg:mb-0 md:mb-0 mb-8  flex justify-center items-center border border-[#828282]  bg-[#828282]"></div>
 
               <div className="w-auto h-40 p-4 flex items-center lg:justify-end justify-center  lg:ml-0 md:ml-6 ml-0    ">
-              
                 <ul className="list-reset text-black space-y-2 mt-2 text-grey-darker rounded ">
-                <h1 className="xl:text-2xl lg:text-2xl  text-xl font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">Contact Us</h1>
+                  <h1 className="xl:text-2xl lg:text-2xl  text-xl font-bold leading-[32px] lg:text-start md:text-start text-center mb-4 text-black dark:text-white">
+                    Contact Us
+                  </h1>
                   <li className="flex items-center mb-1 text-base font-medium leading-[20px] text-[#959CB1] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

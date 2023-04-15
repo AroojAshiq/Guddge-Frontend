@@ -1,29 +1,23 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 const SignupForm = () => {
   return (
     <section className=" bg-[#F5F5F5] dark:bg-[#07343A] text-black-600 body-font flex justify-center items-center relative z-0 overflow-hidden">
-
-<div className="xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] xl:-top-8 lg:-top-8 md:-top-2 -top-2 z-10  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+      <div className="w-full absolute flex justify-end items-end">
+        <div className="xl:block lg:block md:block hidden xl:w-[470px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] relative xl:-top-[250px] lg:-top-[280px] md:-top-[520px] -top-[850px] ">
+          <Frame1 />
+        </div>
       </div>
-
-      <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[440px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[150px] lg:top-[160px] md:top-[150px] top-[270px] absolute  z-10 -left-12   bg-gradient-to-t  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-6 lg:-top-12 md:-top-[350px] -top-[600px] bg-gradient-to-t  ">
+          <Frame2 />
+        </div>
       </div>
-
-     <div className="container  w-full  px-6 py-16 mx-auto relative z-20  ">
-     <div className="flex flex-wrap w-full  mb-8 flex-col ">
+      <div className="container  w-full  px-6 py-16 mx-auto relative z-20  ">
+        <div className="flex flex-wrap w-full  mb-8 flex-col ">
           <h1 className=" text-base leading-[24px] font-medium  mb-2 text-[#959CB1]">
             Home{" > "}
             <span className="text-base leading-[24px] font-medium mb-2 text-black dark:text-white">
@@ -32,9 +26,8 @@ const SignupForm = () => {
             </span>
           </h1>
           <h1 className="xl:text-[45px] text-4xl leading-[56px] font-bold   lg:text-start md:text-start text-center  font-medium font-bold title-font mb-2 text-[#4B4B4B] dark:text-white">
-           Contact Us
+            Contact Us
           </h1>
-        
         </div>
         <div className=" w-full flex justify-center items-center lg:flex-row flex-col space-y-8 mb-8    ">
           <div className="xl:w-[800px] lg:w-[550px] md:w-[600px] sm:w-4/5 p-4   mt-8 bg-white dark:bg-[#04505B] rounded-lg shadow-lg  flex justify-center items-center flex-col ">
@@ -75,13 +68,15 @@ const SignupForm = () => {
                 >
                   <div className="w-full h-auto p-4 flex items-center lg:flex-row md:flex-row flex-col lg:justify-start gap-2 ">
                     <div className=" lg:w-6/12 md:w-6/12 w-full  space-y-2">
-                   
-                    <label className="text-black dark:text-white text-sm font-medium leading-[20px]"> Your Name</label>
-                     
+                      <label className="text-black dark:text-white text-sm font-medium leading-[20px]">
+                        {" "}
+                        Your Name
+                      </label>
+
                       <input
                         id="name"
                         placeholder="Enter youe name"
-                        className="  bg-[#DDEBED] dark:bg-[#0E292D] dark:border-[#04505B] h-[50px] text-white dark:text-white w-full rounded-md"
+                        className="  bg-[#DDEBED] border-[#DDEBED] dark:bg-[#0E292D] dark:border-[#04505B] h-[50px] text-white dark:text-white w-full rounded-md"
                         type="text"
                         {...formik.getFieldProps("name")}
                       />
@@ -90,13 +85,15 @@ const SignupForm = () => {
                       ) : null}
                     </div>
                     <div className="lg:w-6/12 md:w-6/12 w-full space-y-2  ">
-                   
-                    <label className="text-black dark:text-white text-sm font-medium leading-[20px]"> Your </label>
-                     
+                      <label className="text-black dark:text-white text-sm font-medium leading-[20px]">
+                        {" "}
+                        Your{" "}
+                      </label>
+
                       <input
                         id="email"
                         placeholder="Enter your email"
-                        className="bg-[#DDEBED] dark:bg-[#0E292D] dark:border-[#04505B] h-[50px]  text-white dark:text-white w-full rounded-md"
+                        className="bg-[#DDEBED] border-[#DDEBED] dark:bg-[#0E292D] dark:border-[#04505B] h-[50px]  text-white dark:text-white w-full rounded-md"
                         type="email"
                         {...formik.getFieldProps("email")}
                       />
@@ -108,13 +105,15 @@ const SignupForm = () => {
                     </div>
                   </div>
                   <div className="w-full h-40 p-4  flex justify-center">
-                   
-                    <div className=" w-full hfull  space-y-2">
-                    <label className="text-black dark:text-white text-sm font-medium leading-[20px]"> Your Message</label>
-                  
+                    <div className=" w-full h-full  space-y-2">
+                      <label className="text-black dark:text-white text-sm font-medium leading-[20px]">
+                        {" "}
+                        Your Message
+                      </label>
+
                       <textarea
                         id="text"
-                        className=" w-full h-full bg-[#DDEBED] dark:bg-[#0E292D] dark:border-[#04505B]   text-white dark:text-white  rounded-md"
+                        className=" w-full h-full bg-[#DDEBED] border-[#DDEBED] dark:bg-[#0E292D] dark:border-[#04505B]   text-white dark:text-white  rounded-md"
                         type="text"
                         {...formik.getFieldProps("text")}
                       />
@@ -124,7 +123,7 @@ const SignupForm = () => {
                     </div>
                   </div>
                   <div className="p-4 flex lg:justify-start md:justify-start justify-center">
-                  <button
+                    <button
                       type="submit"
                       className=" text-white  w-[124px] h-[56px] bg-[#4BA9B6] dark:bg-[#4BA9B6] hover:text-white hover:bg-gradient-to-b from-[#3799CC] to-[#374BCC] focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-md text-base leading-[24px] px-[35px] py-[16px] text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2 "
                     >

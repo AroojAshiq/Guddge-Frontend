@@ -1,24 +1,19 @@
 import React from "react";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 import { Link } from "react-router-dom";
 function Client() {
-
   return (
-    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A] text-black-600 body-font relative z-0  overflow-hidden ">
-      <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] z-10">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+    <section className=" bg-[#F5F5F5]  w-[100%] dark:bg-[#07343A] flex justify-center items-center  text-black-600 body-font relative z-0  overflow-hidden ">
+      <div className="w-full absolute   flex justify-end  ">
+        <div className=" xl:block lg:block md:block hidden xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[300px] h-[290px] relative xl:-top-[800px] lg:-top-[1460px] md:-top-[1620px]  -top-[620px]  ">
+          <Frame1 />
+        </div>
       </div>
-
-      <div className=" xl:w-[400px] xl:h-[700px]  lg:w-[240px] lg:h-[440px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[200px] lg:top-[160px] md:top-[180px] top-[270px]  absolute  z-10  bg-gradient-to-t ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-[500px] lg:-top-[1200px] md:-top-[1400px] -top-[600px] bg-gradient-to-t  ">
+          <Frame2 />
+        </div>
       </div>
       <div className="container w-full space-y-12 px-6 py-12 mx-auto ">
         <div className="flex flex-wrap w-full  mb-8 flex-col ">
@@ -41,17 +36,21 @@ function Client() {
         <div className="flex flex-wrap  justify-items-center   grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 xl-gap-x-12 xl:gap-y-10 lg:gap-x-2 lg:gap-y-10 md:gap-y-8 md:gap-x-6 sm:gap-y-8 relative z-20 ">
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-1.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className="  text-base font-semibold leading-[20px] text-black  dark:text-white rounded-lg  mb-6 text-center ">
-                Amtrak <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]"> Client</span>
+                Amtrak <br></br>{" "}
+                <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6 text-center ">
@@ -71,17 +70,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto  p-4 mt-8 rounded-lg text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-2.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className="  text-base font-semibold leading-[20px]  text-black dark:text-white  rounded-lg mb-6 text-center ">
-              Bridgestone <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]"> Client</span>
+                Bridgestone <br></br>{" "}
+                <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black dark:text-[#BBBBBB]  text-base font-normal leading-[24px] mb-6 mt-6  text-center ">
@@ -101,17 +104,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-3.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className=" text-base font-semibold leading-[20px] text-black  dark:text-white rounded-lg  mb-6 text-center ">
-              Barclay’s Capital <br></br> <span className="text-[#444444]  dark:text-[#959CB1] text-xs font-normal leading-[16px]"> Client</span>
+                Barclay’s Capital <br></br>{" "}
+                <span className="text-[#444444]  dark:text-[#959CB1] text-xs font-normal leading-[16px]">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mt-6 mb-6  text-center ">
@@ -131,17 +138,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-4.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className="  text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
-              Dassault Systems <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px["> Client</span>
+                Dassault Systems <br></br>{" "}
+                <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px[">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6 text-center">
@@ -161,17 +172,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]  ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-5.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className="  text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
-              Enterprise Products Partners L.P. <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]  " > Company</span>
+                Enterprise Products Partners L.P. <br></br>{" "}
+                <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px]  ">
+                  {" "}
+                  Company
+                </span>
               </h2>
 
               <p className=" text-black   dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6   text-center">
@@ -191,17 +206,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-6.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className="  text-base font-semibold leading-[20px] text-black  dark:text-white rounded-lg  mb-6 text-center ">
-              Lucent Technologies <br></br> <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px] "> Client</span>
+                Lucent Technologies <br></br>{" "}
+                <span className="text-[#444444] dark:text-[#959CB1] text-xs font-normal leading-[16px] ">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading[24px] mb-6 mt-6  text-center ">
@@ -221,17 +240,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto  md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-7.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className=" text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
-              Dassault Systems <br></br> <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]"> Client</span>
+                Dassault Systems <br></br>{" "}
+                <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading[24px] mb-6 mt-6  text-center ">
@@ -251,17 +274,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-8.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className="  text-base font-semibold leading-[20px]  text-black  dark:text-white  rounded-lg  mb-6 text-center ">
-              Enterprise Products Partners L.P. <br></br> <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]"> Company</span>
+                Enterprise Products Partners L.P. <br></br>{" "}
+                <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]">
+                  {" "}
+                  Company
+                </span>
               </h2>
 
               <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6  text-center ">
@@ -281,17 +308,21 @@ function Client() {
 
           <div className="xl:w-[400px] xl:h-[490px] lg:w-[390px] lg:h-auto md:w-[330px] md:h-auto w-[310px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
-              <div className="  ">
+              <div className="h-20 w-20  ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full rounded-full object-center block"
                   src="./client-9.svg"
                 />
               </div>
             </div>
             <div className="w-full ">
               <h2 className=" text-base font-semibold leading-[20px]  text-black  dark:text-white rounded-lg  mb-6 text-center ">
-              Lucent Technologies <br></br> <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]"> Client</span>
+                Lucent Technologies <br></br>{" "}
+                <span className="text-[#444444] text-xs font-normal leading-[16px] dark:text-[#959CB1]">
+                  {" "}
+                  Client
+                </span>
               </h2>
 
               <p className=" text-black  dark:text-[#BBBBBB] text-base font-normal leading-[24px] mb-6 mt-6  text-center ">

@@ -11,7 +11,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
   return (
     <>
       <div
-        className={`  sticky top-0 w-[100%] xl:h-[80px] lg:h-[80px] md:h-[60px] h-[62px] lg:px-[64px] md:px-[45px] lg:pt-[32px] md:pt-[16px] lg:pb-[13px]  md:pb-[2px] px-5 pt-6 pb-7 z-50 ${
+        className={`  sticky top-0 w-[100%]  2xl:h-[90px] xl:h-[80px] lg:h-[80px] md:h-[60px] h-[62px] 3xl:px-[90px]  2xl:px-[70px] xl:px-[60px] lg:px-[60px] md:px-[45px] lg:pt-[32px] md:pt-[16px] lg:pb-[13px]  md:pb-[2px] px-5 pt-6 pb-7 z-50  ${
           darkMode ? "bg-[#595959]" : "bg-[#0E292D]"
         }  `}
       >
@@ -26,7 +26,7 @@ const NavBar = ({ darkMode, setDarkMode, toggleDarkMode }) => {
                 />
               </Link>
             </div>
-            <div className="-mr-2 -my-3 md:hidden">
+            <div className="-mr-2 -my-3  xl:hidden lg:hidden md:hidden block">
               <button
                 type="button"
                 className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"

@@ -8,11 +8,11 @@ import {
   FooterIcon2,
   FooterIcon3,
   FooterIcon4,
-} from "../../iconComponent/Icon";
+} from "../../iconComponent/FooterImages";
 function Footer() {
   return (
     <div>
-      <footer className="w-full p-12 bg-[#595959] dark:bg-[#022125] relative z-0 overflow-hidden ">
+      <footer className="3xl:px-[70px] 2xl:px-[50px] xl:px-[40px] lg:px-[40px] md:px-[40px] px-12 w-full  py-12 bg-[#595959] dark:bg-[#022125] relative z-0 overflow-hidden ">
         <div className="  lg:w-44  lg:h-40 md:w-44 md:w-40 w-32 h-32 absolute  xl:left-[1095px] xl:top-36 lg:left-[800px] lg:top-[150px] md:left-[570px] md:top-[350px]  left-[230px] top-28  z-10  ">
           <Footer1 />
         </div>
@@ -26,14 +26,14 @@ function Footer() {
         </div>
 
         <div className="w-full h-auto relative z-20  ">
-          <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 xl:gap-28 lg:gap-32 md:gap-16 gap-y-12">
+          <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 2xl:gap-8 xl:gap-28 lg:gap-32 md:gap-16 gap-y-12">
             <div className="xl:w-64 lg:w-60 ">
               <div className="  mb-6 md:mb-2">
                 <Link to="/" className="flex items-center">
                   <img
                     src="../logo.svg"
                     className="h-10 mr-3 "
-                    alt="Guddge Logo"
+                    alt="FlowBite Logo"
                   />
                 </Link>
               </div>
@@ -185,8 +185,8 @@ function Footer() {
         </div>
       </footer>
       <div className=" w-full h-12 flex items-center bg-[#ABB3B6] justify-center ">
-        <span className="text-sm  sm:text-center text-black">
-          Copyright © 2023
+        <span className="text-sm  sm:text-center text-black">        
+          Copyright © 2023{" "}
           <Link to="/" className="hover:underline">
             Guddge™
           </Link>

@@ -1,26 +1,19 @@
-
-
 import React from "react";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 import { Link } from "react-router-dom";
 function TeamMembers() {
-
   return (
-    <section className=" bg-[#F5F5F5] dark:bg-[#07343A]  text-black-600 body-font relative z-0  overflow-hidden ">
-       <div className="xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] z-10  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+    <section className=" bg-[#F5F5F5] dark:bg-[#07343A]  text-black-600 body-font flex justify-center items-center  relative z-0  overflow-hidden ">
+      <div className="w-full absolute flex justify-end items-end">
+        <div className="xl:block lg:block md:block hidden xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[350px] md:h-[390px]  w-[280px] h-[250px] relative xl:-top-[550px] lg:-top-[920px] md:-top-[920px] -top-[850px] ">
+          <Frame1 />
+        </div>
       </div>
-
-      <div className=" xl:w-[400px] xl:h-[700px]  lg:w-[240px] lg:h-[440px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[200px] lg:top-[160px] md:top-[180px] top-[270px] absolute  z-10  bg-gradient-to-t  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-[280px] lg:-top-[620px] md:-top-[620px] -top-[600px]  bg-gradient-to-t  ">
+          <Frame2 />
+        </div>
       </div>
       <div className="container w-full  px-6 py-12 mx-auto relative z-20">
         <div className="flex justify-between lg:flex-row md:flex-row flex-col">
@@ -33,7 +26,7 @@ function TeamMembers() {
               </span>
             </h1>
             <h1 className=" xl:text-[45px] text-4xl leading-[56px] font-bold lg:text-start md:text-start text-center  mb-2 text-[#4B4B4B] dark:text-white">
-             Team Members
+              Team Members
             </h1>
             <h2 className=" text-lg font-bold leading-[29px] lg:text-start md:text-start text-center mb-2 text-[#4B4B4B] dark:text-[#959CB1] ">
               Partial Clients
@@ -49,7 +42,7 @@ function TeamMembers() {
               <div className="relative  flex flex justify-center w-full flex-wrap items-stretch  gap-6 ">
                 <input
                   type="search"
-                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC] dark:bg-[#01434B] border-neutral-300 dark:border-[#04505B] bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
+                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC] dark:bg-[#01434B] border-neutral-300 dark:border-none bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
                   placeholder="Search"
                   aria-label="Search"
                   aria-describedby="button-addon1"
@@ -80,7 +73,7 @@ function TeamMembers() {
         </div>
 
         <div className="flex flex-wrap justify-center justify-items-center xl:p-0 md:p-0 p-6   grid xl:grid-cols-3 md:grid-cols-2 sm:grid-col-1 xl-gap-x-12 lg:gap-x-4 lg:gap-y-7 md:gap-x-12 sm:gap-y-8 relative z-20 ">
-          <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[330px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white    bg-[#F5FEFF] dark:bg-[#04505B] ">
+          <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] h-auto p-4 mt-8 rounded-lg bg-white-900 text-white    bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className=" w-32 h-32  ">
                 <img
@@ -95,15 +88,15 @@ function TeamMembers() {
                 Amtrak
               </h2>
               <h3 className="  text-sm font-normal leading-[16px] text-[#444444] dark:text-[#959CB1] rounded-lg mb-6 text-center">
-              Site Engineer
+                Site Engineer
               </h3>
-    <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+              <div className="flex justify-start gap-x-2">
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
@@ -120,24 +113,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="  text-xl font-semibold leading-[20px] text-black dark:text-white rounded-lg text-center ">
-              Bridgestone
+                Bridgestone
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg fnt mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -150,25 +142,22 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className=" text-xl font-semibold leading-[20px] text-black dark:text-white rounded-lg   text-center ">
-              Lucent Mark
+                Lucent Mark
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-              Warehouse Developer
-              </p>
-            </div>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Warehouse Developer
+                </p>
+              </div>
             </div>
           </div>
 
-
-
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -181,24 +170,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className=" text-xl font-semibold leading-[20px]  text-black dark:text-white rounded-lg   text-center ">
-              Warehouse Developer
+                Warehouse Developer
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Site Engineer
+                Site Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -211,25 +199,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className=" text-xl font-semibold leading-[20px] text-black  dark:text-white rounded-lg  text-center ">
-              Bridgestone
+                Bridgestone
               </h2>
               <h3 className="  text-sm font-normal leading-[16px] text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -242,25 +228,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="  text-xl font-semibold leading-[20px]  text-black dark:text-white  rounded-lg   text-center ">
-              Lucent Mark
+                Lucent Mark
               </h2>
               <h3 className="  text-sm font-normal leading-[16px] text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B]">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -273,24 +257,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="  text-xl font-semibold leading-[20px]  text-black dark:text-white  rounded-lg   text-center ">
-              Amtrak
+                Amtrak
               </h2>
               <h3 className="  text-sm font-normal leading-[16px] text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Site Engineer
+                Site Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -303,26 +286,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="  text-xl font-semibold leading-[20px]  text-black dark:text-white rounded-lg  text-center ">
-              Bridgestone
+                Bridgestone
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-
-
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -335,24 +315,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="text-xl font-semibold leading-[20px]  text-black dark:text-white  rounded-lg  text-center ">
-              Lucent Mark
+                Lucent Mark
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -365,25 +344,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className=" text-xl font-semibold leading-[20px] text-black dark:text-white rounded-lg  text-center ">
-              Amtrak
+                Amtrak
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Site Engineer
+                Site Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -396,23 +373,22 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="  text-xl font-semibold leading-[20px]  text-black dark:text-white  rounded-lg text-center ">
-              Bridgestone
+                Bridgestone
               </h2>
               <h3 className=" text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal  leading-[24px]">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal  leading-[24px]">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal  leading-[24px]">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal  leading-[24px]">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
 
-          
           <div className="xl:w-[400px] xl:h-auto md:w-[330px] md:h-auto sm:w-[390px] sm:h-auto  p-4 mt-8 rounded-lg bg-white-900 text-white   xl:h-96 md:h-72  bg-[#F5FEFF] dark:bg-[#04505B] ">
             <div className=" rounded-lg flex justify-center items-center   ">
               <div className="w-32 h-32  ">
@@ -425,24 +401,23 @@ function TeamMembers() {
             </div>
             <div className="w-full ">
               <h2 className="  text-xl font-semibold leading-[20px]  text-black dark:text-white rounded-lg  text-center ">
-              Lucent Mark
+                Lucent Mark
               </h2>
               <h3 className="  text-sm font-normal leading-[16px]  text-[#444444] dark:text-[#959CB1] rounded-lg  mb-6 text-center">
-              Analytics Engineer
+                Analytics Engineer
               </h3>
 
               <div className="flex justify-start gap-x-2">
-              <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
-              Team Member Of :
-              </p>
-              <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
-               Data Governance Team
-              </p>
+                <p className=" text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px]  ">
+                  Team Member Of :
+                </p>
+                <p className="text-black dark:text-white xl:text-base lg:text-md  md:text-sm text-sm font-normal leading-[24px] ">
+                  Data Governance Team
+                </p>
               </div>
             </div>
           </div>
-
-          </div>
+        </div>
 
         <div className="flex items-center justify-center   bg-[#F5F5F5] dark:bg-[#07343A] px-4 py-3 sm:px-6 mt-6 ">
           <div className="flex flex-1 justify-center sm:hidden">

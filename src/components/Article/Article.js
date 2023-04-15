@@ -1,24 +1,20 @@
 import React from "react";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 import { useNavigate, Link } from "react-router-dom";
 function Article() {
   const navigate = useNavigate();
   return (
-    <section className=" bg-[#F5F5F5] dark:bg-[#07343A] text-black-600 body-font relative z-0  overflow-hidden ">
-      <div className="xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] z-10  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+    <section className=" bg-[#F5F5F5] dark:bg-[#07343A] flex justify-center items-center text-black-600 body-font relative z-0  overflow-hidden ">
+      <div className="w-full absolute flex justify-end items-end">
+        <div className="xl:block lg:block md:block hidden xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] relative xl:-top-[600px] lg:-top-[1020px] md:-top-[1060px] -top-[850px] ">
+          <Frame1 />
+        </div>
       </div>
-
-      <div className=" xl:w-[400px] xl:h-[700px]  lg:w-[240px] lg:h-[440px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[200px] lg:top-[160px] md:top-[180px] top-[270px] absolute  z-10  bg-gradient-to-t  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-[300px] lg:-top-[800px] md:-top-[800px] -top-[600px]  bg-gradient-to-t  ">
+          <Frame2 />
+        </div>
       </div>
       <div className="container w-full space-y-12 px-6 py-12 mx-auto relative z-20 ">
         <div className="flex justify-between lg:flex-row md:flex-row flex-col ">
@@ -42,7 +38,7 @@ function Article() {
               <div className="relative  flex flex justify-center w-full flex-wrap items-stretch  gap-6 ">
                 <input
                   type="search"
-                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC] dark:bg-[#01434B] border-neutral-300 dark:border-[#04505B] bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
+                  className="relative m-0 -mr-px block w-[1%] h-[50px] min-w-0 flex-auto rounded-lg  bg-[#ECECEC] dark:bg-[#01434B] border-neutral-300 dark:border-none bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
                   placeholder="Search"
                   aria-label="Search"
                   aria-describedby="button-addon1"
@@ -104,7 +100,10 @@ function Article() {
               </div>
               <div className=" rounded-lg  flex justify-center items-center ">
                 <h1 className=" text-black dark:text-white text-sm font-medium  leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson <br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
+                  Mark Nelson <br></br>{" "}
+                  <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">
+                    Tech Engineer
+                  </span>
                 </h1>
               </div>
               <div className="w-32 h-16   flex justify-end items-center ml-8 lg:mt-2 md:mt-6 mt-5 ">
@@ -153,7 +152,10 @@ function Article() {
               </div>
               <div className=" rounded-lg   flex items-center  ">
                 <h1 className=" text-black dark:text-white  text-sm  font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
+                  Mark Nelson<br></br>{" "}
+                  <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">
+                    Tech Engineer
+                  </span>
                 </h1>
               </div>
               <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
@@ -202,7 +204,10 @@ function Article() {
               </div>
               <div className=" rounded-lg    flex items-center ">
                 <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
+                  Mark Nelson<br></br>{" "}
+                  <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">
+                    Tech Engineer
+                  </span>
                 </h1>
               </div>
               <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
@@ -251,7 +256,10 @@ function Article() {
               </div>
               <div className=" rounded-lg   flex items-center  ">
                 <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
+                  Mark Nelson<br></br>{" "}
+                  <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">
+                    Tech Engineer
+                  </span>
                 </h1>
               </div>
               <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5 items-center ">
@@ -300,7 +308,10 @@ function Article() {
               </div>
               <div className=" rounded-lg   flex items-center  ">
                 <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
+                  Mark Nelson<br></br>{" "}
+                  <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">
+                    Tech Engineer
+                  </span>
                 </h1>
               </div>
               <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">
@@ -349,7 +360,10 @@ function Article() {
               </div>
               <div className=" rounded-lg    flex items-center ">
                 <h1 className=" text-black dark:text-white  text-sm font-medium leading-[20px] ml-6 mr-6 mb-4 mt-4  rounded-lg  ">
-                  Mark Nelson<br></br> <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">Tech Engineer</span>
+                  Mark Nelson<br></br>{" "}
+                  <span className="text-xs font-normal leading-[16px] xl:block lg:block hidden ">
+                    Tech Engineer
+                  </span>
                 </h1>
               </div>
               <div className="w-32 h-16 flex justify-end ml-8 ml-8 lg:mt-2 md:mt-6 mt-5  items-center ">

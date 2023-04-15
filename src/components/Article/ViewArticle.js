@@ -2,21 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 function ViewArticle() {
   return (
-    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A] text-black-600 body-font relative z-0   ">
-      <div className=" xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px]  z-10">
+    <section className=" bg-[#F5F5F5]  dark:bg-[#07343A]  flex justify-center items-center text-black-600 body-font relative z-0   ">
+      <div className="w-full absolute flex justify-end items-end">
+     <div className=" xl:block lg:block md:block hidden xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] relative xl:-top-[800px] lg:-top-[820px] md:-top-[820px] -top-[970px] ">
         <img
           alt="gallery"
           className="w-full object-cover h-full  object-center block"
           src="./Frame 915.svg"
         />
       </div>
-
-      <div className=" xl:w-[400px] xl:h-[700px]  lg:w-[240px] lg:h-[440px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[200px] lg:top-[160px] md:top-[180px] top-[270px] absolute  z-10  bg-gradient-to-t ">
+      </div>
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+      <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-[300px] lg:-top-[800px] md:-top-[800px] -top-[600px]  bg-gradient-to-t  ">
         <img
           alt="gallery"
           className="w-full object-cover h-full  object-center block  "
           src="./Frame 916.svg"
         />
+      </div>
       </div>
       <div className="container w-full  px-6 py-24 mx-auto ">
         <div className="flex  justify-center relative z-20 mb-8">

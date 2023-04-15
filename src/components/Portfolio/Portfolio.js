@@ -1,22 +1,20 @@
 import React from "react";
+import { Frame1, Frame2 } from "../iconComponent/Slide";
 
 function Portfolio() {
   return (
-    <section className=" bg-[#F5F5F5] dark:bg-[#07343A]  text-black-600 body-font relative z-0 overflow-hidden  ">
-     <div className="xl:w-[550px]  xl:h-[500px]  lg:w-[380px] lg:h-[380px]  md:w-[470px] md:h-[390px]  w-[280px] h-[250px] absolute   xl:left-[898px] lg:left-[643px]  md:left-[438px] left-[130px] z-10  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block"
-          src="./Frame 915.svg"
-        />
+    <section className=" bg-[#F5F5F5] dark:bg-[#07343A]  text-black-600 body-font  flex justify-center items-center relative z-0 overflow-hidden  ">
+      <div className="w-full absolute flex justify-end items-end">
+        <div className="xl:block lg:block md:block hidden xl:w-[550px]  xl:h-[500px]  lg:w-[400px] lg:h-[380px]  md:w-[370px] md:h-[390px]  w-[280px] h-[250px] relative xl:-top-[550px] lg:-top-[900px] md:-top-[880px] -top-[850px] ">
+         
+          <Frame1 />
+        </div>
       </div>
-
-      <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[240px] lg:h-[440px] md:w-[240px] md:h-[420px] w-[220px] h-[400px] xl:top-[160px] lg:top-[160px] md:top-[150px] top-[270px] absolute  z-10  bg-gradient-to-t  ">
-        <img
-          alt="gallery"
-          className="w-full object-cover h-full  object-center block  "
-          src="./Frame 916.svg"
-        />
+      <div className="w-full absolute flex justify-start xl:block lg:block md:block hidden">
+        <div className=" xl:w-[420px] xl:h-[700px]  lg:w-[280px] lg:h-[485px] md:w-[270px] md:h-[420px] w-[220px] h-[400px] relative xl:-top-[280px] lg:-top-[700px] md:-top-[650px] -top-[600px]  bg-gradient-to-t  ">
+         
+          <Frame2 />
+        </div>
       </div>
       <div className="container w-full space-y-12 px-6 py-12 mx-auto ">
         <div className="flex flex-wrap w-full  mb-8 flex-col ">
@@ -24,7 +22,7 @@ function Portfolio() {
             Home{" > "}
             <span className="text-base leading-[24px] font-medium  title-font mb-2 text-black dark:text-white">
               {" "}
-               About
+              About
             </span>
           </h1>
           <h1 className="xl:text-[45px] text-4xl leading-[56px] font-bold   lg:text-start md:text-start text-center  font-medium font-bold title-font mb-2 text-[#4B4B4B]  dark:text-white">
@@ -68,7 +66,7 @@ function Portfolio() {
 
             <div className="  h-32 ">
               <h1 className=" text-black dark:text-white  text-2xl font-bold  mt-6 ml-6 pr-6  text-left">
-              Program Projects
+                Program Projects
               </h1>
 
               <p className=" text-black dark:text-[#959CB1]  text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
@@ -88,11 +86,11 @@ function Portfolio() {
 
             <div className=" h-32  ">
               <h1 className=" text-black  dark:text-white text-2xl font-bold leading-[32px]  mt-6 ml-6 pr-6  text-left">
-              Architecture
+                Architecture
               </h1>
 
               <p className=" text-black dark:text-[#959CB1]  text-base font-medium leading-[24px] mt-6 ml-6 pr-6  text-left">
-              Information Management
+                Information Management
               </p>
             </div>
           </div>
@@ -108,11 +106,11 @@ function Portfolio() {
 
             <div className="  h-32 ">
               <h1 className=" text-black dark:text-white text-2xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
-              Data Modeling
+                Data Modeling
               </h1>
 
               <p className=" text-black  dark:text-[#959CB1]  text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
-              Information Management
+                Information Management
               </p>
             </div>
           </div>
@@ -128,11 +126,11 @@ function Portfolio() {
 
             <div className=" h-32  ">
               <h1 className=" text-black dark:text-white text-2xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
-              Data Integration
+                Data Integration
               </h1>
 
               <p className=" text-black dark:text-[#959CB1]  text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
-              Information Management
+                Information Management
               </p>
             </div>
           </div>
@@ -148,7 +146,7 @@ function Portfolio() {
 
             <div className=" h-32  ">
               <h1 className=" text-black dark:text-white text-2xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
-              Mining
+                Mining
               </h1>
 
               <p className=" text-black dark:text-[#959CB1]  text-base font-medium leading-[24px] mt-6 ml-6 pr-6  text-left">
@@ -168,11 +166,11 @@ function Portfolio() {
 
             <div className="  h-32 ">
               <h1 className=" text-black  dark:text-white text-2xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
-              Data Quality
+                Data Quality
               </h1>
 
               <p className=" text-black dark:text-[#959CB1]  text-base font-medium leading-[24px] mt-6 ml-6 pr-6  text-left">
-              Information Management
+                Information Management
               </p>
             </div>
           </div>
@@ -188,11 +186,11 @@ function Portfolio() {
 
             <div className="  h-32 ">
               <h1 className=" text-black dark:text-white text-2xl font-bold leading-[32px] mt-6 ml-6 pr-6  text-left">
-              Data Quality
+                Data Quality
               </h1>
 
               <p className=" text-black dark:text-[#959CB1]  text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
-              Information Management
+                Information Management
               </p>
             </div>
           </div>
@@ -208,7 +206,7 @@ function Portfolio() {
 
             <div className="  h-32 ">
               <h1 className=" text-black dark:text-white text-2xl font-bold leading-[32px]  mt-6 ml-6 pr-6  text-left">
-              Reporting
+                Reporting
               </h1>
 
               <p className=" text-black  dark:text-[#959CB1] text-base font-medium leading-[24px]  mt-6 ml-6 pr-6  text-left">
